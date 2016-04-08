@@ -1,0 +1,220 @@
+// Mixins para media queries
+
+@mixin hasta($size){
+  @if map-has-key($breakpoints,$size){
+    @media screen and (max-width: map-get($breakpoints,$size) - 1){
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin to($size){
+  @if map-has-key($breakpoints,$size){
+    @media screen and (max-width: map-get($breakpoints,$size) - 1){
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin desde($size){
+  @if map-has-key($breakpoints,$size){
+    @media screen and (min-width: map-get($breakpoints,$size)){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin from($size){
+  @if map-has-key($breakpoints,$size){
+    @media screen and (min-width: map-get($breakpoints,$size)){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin desde-hasta($desde,$hasta){
+  @if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: map-get($breakpoints,$hasta) - 1){
+      @content;
+    }
+  } @else if map-has-key($breakpoints,$desde) and not map-has-key($breakpoints,$hasta){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: $hasta) {
+      @content;
+    }
+  } @else if not map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $desde) and (max-width: $hasta){
+      @content;
+    }
+  }
+}
+
+@mixin from-to($desde,$hasta){
+  @if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: map-get($breakpoints,$hasta) - 1){
+      @content;
+    }
+  } @else if map-has-key($breakpoints,$desde) and not map-has-key($breakpoints,$hasta){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: $hasta) {
+      @content;
+    }
+  } @else if not map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $desde) and (max-width: $hasta){
+      @content;
+    }
+  }
+}
+
+@mixin desde-pantalla($size,$orientation){
+  @if map-has-key($breakpoints,$size) and map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: map-get($breakpoints,$size)) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin from-screen($size,$orientation){
+  @if map-has-key($breakpoints,$size) and map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: map-get($breakpoints,$size)) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin hasta-pantalla($size,$orientation){
+  @if map-has-key($breakpoints,$size) and map-has-key($pantalla,$orientation) {
+    @media screen and (max-width: map-get($breakpoints,$size) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin to-screen($size,$orientation){
+  @if map-has-key($breakpoints,$size) and map-has-key($pantalla,$orientation) {
+    @media screen and (max-width: map-get($breakpoints,$size) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $size){
+      @content;
+    }
+  }
+}
+
+@mixin desde-hasta-pantalla($desde,$hasta,$orientation){
+  @if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) map-has-key($pantalla,$orientation){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else if map-has-key($breakpoints,$desde) and not map-has-key($breakpoints,$hasta) and map-has-key($pantalla,$orientation){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: $hasta) and (orientation: map-get($pantalla,$orientation))  {
+      @content;
+    }
+  } @else if not map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) and map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  }@else if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) and not map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($orientation)){
+      @content; 
+    }
+  }@else {
+    @media screen and (min-width: $desde) and (max-width: $hasta) and (orientation: $orientation) {
+      @content;
+    }
+  }
+}
+
+@mixin from-to-screen($desde,$hasta,$orientation){
+  @if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) map-has-key($pantalla,$orientation){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  } @else if map-has-key($breakpoints,$desde) and not map-has-key($breakpoints,$hasta) and map-has-key($pantalla,$orientation){
+    @media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: $hasta) and (orientation: map-get($pantalla,$orientation))  {
+      @content;
+    }
+  } @else if not map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) and map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($pantalla,$orientation)){
+      @content;
+    }
+  }@else if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) and not map-has-key($pantalla,$orientation) {
+    @media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1) and (orientation: map-get($orientation)){
+      @content; 
+    }
+  }@else {
+    @media screen and (min-width: $desde) and (max-width: $hasta) and (orientation: $orientation) {
+      @content;
+    }
+  }
+}
+
+@mixin proporcion($h,$v,$width:100%){
+  width          : $width;
+  height         : 0;
+  overflow       : hidden;
+  padding-bottom : $width * ($v/$h);
+}
+
+@mixin limpiar {
+  &:before,&:after{
+    content: "";
+    width: 100%;
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin derecha($width:auto,$margin-left:1em){
+  float: right;
+  width: $width;
+  margin-left: $margin-left;
+}
+
+@mixin izquierda($width:auto,$margin-right:1em){
+  float: left;
+  width: $width;
+  margin-right: $margin-right;
+}
+
+@mixin centro($width:auto){
+  display: table;
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
