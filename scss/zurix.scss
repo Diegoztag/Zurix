@@ -1,0 +1,165 @@
+// Variables Generales del framework Zurix
+
+//Fuentes o Fonts. Agregue el @import de Google-Fonts o bien su fuente personalizada
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+
+
+// Ancho máximo que puede alcanzar el contenedor principal o papá.
+$max-width: 1200px;
+
+// Valor de la separación entre hijos o items.
+$padding: 15px;
+
+// Tamaños, puede modificar,borrar o añadir los nombres y valores por default para 
+// ajustarse a sus puntos de quiebre o medias querys personalizados.
+$breakpoints: (
+  movil  : 480px,
+  tablet : 768px,
+  web    : 1024px,
+  hd     : 1400px
+);
+
+$movil  : 480px;
+$tablet : 768px;
+$web    : 1024px;
+$hd     : 1400px;
+
+// Fracciones para designar la anchura de los contenedores hijos.
+// Se pueden editar.
+$fracciones: (
+  tercios : 3,
+  sextos  : 6,
+  octavos : 8
+);
+
+// Orientación del viewport screen.
+// No editar (Importante).
+$pantalla : (
+  ancho   : landscape,
+  alto    : portrait
+);
+
+$ancho : landscape;
+$alto  : portrait;
+
+// Muestras de colores, modifique para crear su paleta de color personalizada.
+  $blanco : #FDFDFD;
+  $negro  : #070D12;
+
+// Estilos básicos.
+  $body-background  : $blanco;                   // Color de fondo para el body.
+  $body-font        : 'Open Sans', sans-serif;   // Tipo de fuente predeterminada.
+  $body-color       : #333;                      // Color de texto base.
+
+// Estilo para los títulos
+  $header-font           : 'Open Sans', sans-serif;  // Tipografía para los títulos (h1,h2,h3...)
+  $header-font-weight    : normal;                  // Espesura de la letra de los títulos.
+  $header-text-transform : normal;                   // normal, uppercase, lowercase, capitalize
+  $header-color          : #2d2d2d;                  // Color designado para los títulos.
+
+// Tamaño de títulos
+  $h1-font-size : 2em;
+  $h2-font-size : 1.7em;
+  $h3-font-size : 1.4em;
+  $h4-font-size : 1.1em;
+  $h5-font-size : 1em;
+  $h6-font-size : 0.9em;
+
+// Estilo para los enlaces <a>
+  $link-color : #2d2d2d;        // Color.
+
+// Estilos párrafos
+  $p-font-size   : 1em;        // Tamaño.
+  $p-line-height : 1.5;        // Altura de línea.
+  $p-margin      : 1.5em;      // Margen o separación.
+
+//Estilos básicos.
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background  : $body-background;
+    font-family : $body-font;
+    color       : $body-color;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration : none;
+    color           : $link-color;
+  }
+
+  p, blockquote, li {
+    font-size   : $p-font-size;
+    line-height : $p-line-height;
+    list-style  : none;
+  }
+
+  p {
+    margin : 0 0 $p-margin 0;
+    &:last-child,
+    &:only-child {
+        margin: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family    : $header-font;
+    font-weight    : $header-font-weight;
+    text-transform : $header-text-transform;
+    color          : $header-color;
+  }
+
+  h1 {
+    font-size : $h1-font-size;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size : $h2-font-size;
+  }
+
+  h3 {
+    font-size : $h3-font-size;
+  }
+
+  h4 {
+    font-size : $h4-font-size;
+  }
+
+  h5 {
+    font-size : $h5-font-size;
+  }
+
+  h6 {
+    font-size : $h6-font-size;
+  }
+
+// Módulos de Zurix
+//NOTA: para mejorar el rendimiento del framework desactive los módulos que no se usaran
+//aplicando doble slash "//" antes de @import.
+@import "componentes/core";        // Núcleo base de Zurix.
+@import "componentes/mixins";      // Mixins
+@import "componentes/flexbox";     // Flexbox
+@import "componentes/desarrollo";  // Modo desarrollo
+@import "componentes/visibilidad"; // Controlar la visibilidad
+@import "componentes/utilidades";  // Utilidades adicionales
+//@import "componentes/video";       // Videos responsive
+//@import "componentes/menu";        // Zurix menu
+@import "componentes/icon-fonts";  // Icon fonts
+//@import "componentes/offset";      // Offset
+//@import "componentes/tablas";      // Tablas

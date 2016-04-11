@@ -1,0 +1,79 @@
+// ESTILOS DE LAYOUT
+.centro,
+.center {
+    display: block;
+    clear: both;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.left,
+.izquierda {
+    float: left;
+}
+
+.right,
+.derecha {
+    float: right;
+}
+
+.total,
+.full {
+    width: 100%;
+    clear: both;
+}
+
+.centrar-texto,
+.center-text,
+.text-center {
+  text-align: center;
+}
+
+.izquierda-texto,
+.izquierda-contenido {
+    text-align: left;
+}
+
+.derecha-texto,
+.derecha-contenido {
+    text-align: right;
+}
+
+.circulo,
+.circle {
+    border-radius: 50%;
+}
+
+.limpiar,
+.clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+  }
+}
+
+/*
+class="no-padding" el papa, le hereda padding cero a todas sus hijos.
+class="no-padding" el hijo le da padding cero solo a este.
+*/
+
+.no-padding.papa > .hijo,
+.no-padding.papa > .item,
+.no-padding.papa > .son,
+.no-padding.dad > .hijo,
+.no-padding.dad > .item,
+.no-padding.dad > .son,
+.no-padding.contenedor > .hijo,
+.no-padding.contenedor > .item,
+.no-padding.contenedor > .son,
+.no-padding.container > .hijo,
+.no-padding.container > .item,
+.no-padding.container > .son,
+.hijo.no-padding,
+.son.no-padding,
+.item.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
