@@ -8,11 +8,124 @@
 	<meta name="description" content="Framework CSS flexbox destinado a crear diseños web responsive (RWD) y mobile first">
 	<meta name ="keywords" content="Framework CSS Sass RWD Flexbox">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<title>Zurix</title>
+	<title>Zurix | Diseño a velocidad luz</title>
 	<link rel="stylesheet" href="css/zurix.css">
 </head>
 
 <body>
 	
+	<section id="menu">
+		<div class="papa no-padding">
+			<div class="hijo menu">
+
+				<nav class="menu__nav">
+					<div class="menu__fix justificar medio">
+						<div class="menu__logo">
+							<span>ZURIX</span>
+						</div>
+						<div class="menu__abrir">
+							<div class="menu__btn centrar">
+								<span class="menu__linea"></span>
+								<span class="menu__linea"></span>
+								<span class="menu__linea"></span>
+							</div>
+						</div>		
+					</div>
+
+					<ul class="menu__ul">
+						<li class="menu__item">1</li>
+						<li class="menu__item">2</li>
+						<li class="menu__item">3</li>
+						<li class="menu__item">4</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</section>
+	
+	<header class="head-main">
+		<div class="papa no-padding">
+			<div class="hijo banner column ">
+				<h1 class="banner__title">Zurix</h1>
+				<h3 class="banner__subtitle">Diseño a velocidad luz</h3>
+				<img class="banner__icono" src="img/icon.png" alt="icon">
+			</div>
+		</div>
+	</header>
+
+	<section id="main">
+		<div class="papa">
+			<div class="hijo main base-85">
+				<p>Zurix es un framework exclusivamente CSS para crear diseños web responsive (RWD) y mobile first.</p>
+				<p>Desarolla geniales proyectos para cualquier tamaño de pantalla fácilmente, con zurix es alucinante lo fácil que resulta pues es senmántico, legible, flexible y absolutamente personalizable.</p>
+				<p>Creado en SASS, destinado para maquetación o estructura pura y en tiempo récord, no añade estilos predeterminados para evitar conflictos con proyectos en desarrollo y así olvidarse de las colisiones de estilos css framework-diseñador, dotado con todo el poder de flexbox!! es hora de olvidar los floats</p>
+				
+				<div class="papa no-padding caract-wrap">
+					<div class="hijo caracteristicas">
+						<img class="caracteristicas__flat" src="img/1.png" alt="mobile fist">
+						<h3 class="caracteristicas__title">First mobile</h3>
+						<p>Zurix esta diseñado para ser first mobile, usted puede iniciar en dispositivos pequeños primero y a medida que el navegador se hace mas grande se puede ir añadiendo mas complejidad para un diseño organizado,aunque no esta escrito en piedra también puede iniciar en dispositivos grandes, solo es cuestión de gustos.</p>
+					</div>
+					<div class="hijo caracteristicas">
+						<img class="caracteristicas__flat" src="img/2.png" alt="versatil">
+						<h3 class="caracteristicas__title">Versatilidad</h3>
+						<p>Destinado para la maquetación o estructura pura, zurix no tiene css visual preestablecido para que esto no choque con el css del diseñador, cosa que hace de este framework genial para incluir en proyectos en desarrollo con la seguridad de que no habrá inconvenientes o rupturas del esquema</p>
+					</div>
+					<div class="hijo caracteristicas">
+						<img class="caracteristicas__flat" src="img/3.png" alt="intuitivo">
+						<h3 class="caracteristicas__title">Intuitivo</h3>
+						<p>Esta diseñado para ser rápido, sencillo y generar una curva de aprendizaje mínima, los nombres de las clases son muy fáciles de memorizar, utiliza zurix por un rato y en un pestañeo lo dominaras como un pro.</p>
+					</div>
+					<div class="hijo caracteristicas">
+						<img class="caracteristicas__flat" src="img/4.png" alt="personalizable">
+						<h3 class="caracteristicas__title">Personalizable</h3>
+						<p>En su versión Sass zurix es increíblemente personalizable, solo basta con modificar los valores de variables declaradas por defecto o crear propias, ademas que es muy liviano a comparación de otros frameworks</p>
+					</div>
+				</div>
+				
+				<h3 class="text-center">Empezando</h3>
+				
+				<h5>Contenedores</h5>
+				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas (.papa) e hijos (.hijo) para tener una mejor comprensión y organización de contenedores se aconseja utilizar la etiqueta div para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
+				<p>Hay varios puntos que se tienen que dejar en claro en cuanto a el uso de contenedores papas e hijos en zurix:</p>
+				<ul class="">
+					<li>1.Los papas con los contenedores principales y los hijos son divisiones del contenedor papa.</li>
+					<li>2.Todo contenedor papa debe tener al menos un hijo y los hijos deben estar dentro de un papa.</li>
+					<li>3.Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase ".tamaño-x" o si es una fracción ".tamaño-x-y".</li>
+				</ul>
+				<p>Ejemplo:</p>
+
+				<div class="papa text-center ejemplo-cajas">
+					<div class="hijo base-50"><p>Hola hijo 1</p></div>
+					<div class="hijo base-50"><p>Hola hijo 2</p></div>
+					<div class="hijo full"><p>Yo soy mayor!! :D</p></div>
+					<div class="hijo base-1-3"><p>Trillizos</p></div>
+					<div class="hijo base-1-3"><p>Trillizos</p></div>
+					<div class="hijo base-1-3"><p>Trillizos</p></div>
+					<div class="hijo full"><p>No yo soy mayor!! >:s</p></div>
+				</div>
+				
+				<pre class="line-numbers languaje-markup" data-languaje="Markup">
+					<code class="language-markup">
+						<div class="papa">
+							<div class="hijo base-50"><p>Hola hijo 1</p></div>
+							<div class="hijo base-50"><p>Hola hijo 2</p></div>
+							<div class="hijo full"><p>Yo soy mayor!! :D</p></div>
+							<div class="hijo base-1-3"><p>Trillizos</p></div>
+							<div class="hijo base-1-3"><p>Trillizos</p></div>
+							<div class="hijo base-1-3"><p>Trillizos</p></div>
+							<div class="hijo full"><p>No yo soy mayor!! >:s</p></div>
+						</div>
+					</code>
+				</pre>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

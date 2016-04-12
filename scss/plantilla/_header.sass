@@ -1,0 +1,76 @@
+.head-main
+    width: 100%
+    height: 55vh
+    display: flex
+    align-items: center
+    overflow: hidden
+    white-space: nowrap
+    background-image: url("../img/banner.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.menu
+    color: $blanco
+    height: auto
+    width: 100%
+    &__fix
+        height: 44px
+        width: 100%
+        background: #0d0d0d
+    &__logo
+        margin-left: 17px
+        font-size: 17px
+        font-weight: bold
+    &__abrir
+        background: transparent
+        padding: 3px 6px
+        margin-right: 20px
+        border-radius: 3px
+        -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75)
+        -moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75)
+        box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75)
+    &__btn
+        margin-top: 4px
+        height: 19px
+        width: 21px
+    &__linea
+        height: 2px
+        width: 23px
+        background: $blanco
+    &__ul
+        display: none
+        position: absolute
+        width: 100%
+        background: #2d2d2d
+        padding: 0
+        margin: 0
+        text-align: center
+    &__item
+        display: block
+        line-height: 2.3
+        border-bottom: 1px solid #373737
+        transition: all 0.05s linear
+        &:nth-last-child
+            border-bottom: none
+        &:hover
+            background: $blanco
+            color: #2d2d2d
+
+.banner
+    text-align: center
+    &__title
+        color: $blanco
+        line-height: 1
+        font-size: 23px
+        margin: 0
+        font-weight: bold
+        text-transform: uppercase
+    &__subtitle
+        color: $blanco
+        line-height: 0
+        font-size: 18px
+        letter-spacing: 0.4px
+        font-family: Arial Narrow
+    &__icono
+        width: 35px

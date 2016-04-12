@@ -1,5 +1,48 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+code, tt {
+  display: block;
+  padding: 5px 10px;
+  margin: 15px 0;
+  font-family: Inconsolata, monospace, sans-serif;
+  font-size: 1em;
+  white-space: pre-wrap;
+  background: #1E252A;
+  overflow: auto;
+  color: #E3EDF3;
+  border-radius: 0.3em;
+  -webkit-font-feature-settings: "liga" 0;
+  -moz-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
+}
+
+pre {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5em 1em;
+  font-family: Inconsolata, monospace, sans-serif;
+  font-size: 0.9em;
+  white-space: pre;
+  overflow: auto;
+  background: #1E252A;
+  border-radius: 3px;
+}
+
+.cajacode {
+  display: block;
+  min-width: 700px;
+}
+
+.comment {
+  color: #708090;
+}
+
+.string {
+  color: #a6e22e;
+}
+
 *,
 *:before,
 *:after {
@@ -8,7 +51,7 @@
 
 body {
   background: #FDFDFD;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial;
   color: #333;
   margin: 0;
   padding: 0;
@@ -43,7 +86,7 @@ figure {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial;
   font-weight: normal;
   text-transform: normal;
   color: #2d2d2d;
@@ -87,7 +130,7 @@ h6 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -2645,4 +2688,138 @@ class="no-padding" el hijo le da padding cero solo a este.
 
 .icon-tags:before {
   content: "-";
+}
+
+.head-main {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  color: #FDFDFD;
+  height: auto;
+  width: 100%;
+}
+.menu__fix {
+  height: 44px;
+  width: 100%;
+  background: #0d0d0d;
+}
+.menu__logo {
+  margin-left: 17px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.menu__abrir {
+  background: transparent;
+  padding: 3px 6px;
+  margin-right: 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+.menu__btn {
+  margin-top: 4px;
+  height: 19px;
+  width: 21px;
+}
+.menu__linea {
+  height: 2px;
+  width: 23px;
+  background: #FDFDFD;
+}
+.menu__ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #2d2d2d;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu__item {
+  display: block;
+  line-height: 2.3;
+  border-bottom: 1px solid #373737;
+  transition: all 0.05s linear;
+}
+.menu__item:nth-last-child {
+  border-bottom: none;
+}
+.menu__item:hover {
+  background: #FDFDFD;
+  color: #2d2d2d;
+}
+
+.banner {
+  text-align: center;
+}
+.banner__title {
+  color: #FDFDFD;
+  line-height: 1;
+  font-size: 23px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.banner__subtitle {
+  color: #FDFDFD;
+  line-height: 0;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-family: Arial Narrow;
+}
+.banner__icono {
+  width: 35px;
+}
+
+.main {
+  margin: 3em auto;
+}
+.main p, .main ul {
+  font-size: 14px;
+  color: #555556;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1.55;
+}
+
+.caract-wrap {
+  border-bottom: 1px dashed #cacaca;
+  border-top: 1px dashed #cacaca;
+  margin: 2em 0em;
+}
+
+.caracteristicas {
+  margin: 1em 0;
+  text-align: center;
+}
+.caracteristicas h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 2;
+}
+.caracteristicas__flat {
+  width: 70px;
+}
+
+.ejemplo-cajas {
+  border: 1px solid #19BD72;
+}
+.ejemplo-cajas p {
+  line-height: 4;
+}
+
+.ejemplo-cajas > .hijo {
+  border: 1px solid #36434d;
 }

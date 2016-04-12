@@ -5,7 +5,7 @@
 
 
 // Ancho máximo que puede alcanzar el contenedor principal o papá.
-$max-width: 1200px;
+$max-width: 1500px;
 
 // Valor de la separación entre hijos o items.
 $padding: 15px;
@@ -48,11 +48,11 @@ $alto  : portrait;
 
 // Estilos básicos.
   $body-background  : $blanco;                   // Color de fondo para el body.
-  $body-font        : 'Open Sans', sans-serif;   // Tipo de fuente predeterminada.
+  $body-font        : 'Open Sans', Arial;   // Tipo de fuente predeterminada.
   $body-color       : #333;                      // Color de texto base.
 
 // Estilo para los títulos
-  $header-font           : 'Open Sans', sans-serif;  // Tipografía para los títulos (h1,h2,h3...)
+  $header-font           : 'Open Sans', Arial;  // Tipografía para los títulos (h1,h2,h3...)
   $header-font-weight    : normal;                  // Espesura de la letra de los títulos.
   $header-text-transform : normal;                   // normal, uppercase, lowercase, capitalize
   $header-color          : #2d2d2d;                  // Color designado para los títulos.
@@ -74,6 +74,50 @@ $alto  : portrait;
   $p-margin      : 1.5em;      // Margen o separación.
 
 //Estilos básicos.
+
+  code, tt{
+    display: block;
+    padding: 5px 10px;
+    margin: 15px 0;
+    font-family: Inconsolata, monospace, sans-serif;
+    font-size: 1em;
+    white-space: pre-wrap;
+    background: #1E252A;
+    overflow: auto;
+    color: #E3EDF3;
+    border-radius: 0.3em;
+    -webkit-font-feature-settings: "liga" 0;
+    -moz-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0;
+  }
+
+  pre{
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em 1em;
+    font-family: Inconsolata, monospace, sans-serif;
+    font-size: 0.9em;
+    white-space: pre;
+    overflow: auto;
+    background: #1E252A;
+    border-radius: 3px;  
+  }
+
+  .cajacode{
+    display: block;
+    min-width: 700px;
+  }
+
+  .comment{
+    color: #708090;
+  }
+
+  .string{
+    color: #a6e22e;
+  }
+
   *,
   *:before,
   *:after {
@@ -163,3 +207,6 @@ $alto  : portrait;
 @import "componentes/icon-fonts";  // Icon fonts
 //@import "componentes/offset";      // Offset
 //@import "componentes/tablas";      // Tablas
+
+@import "plantilla/header";
+@import "plantilla/main";
