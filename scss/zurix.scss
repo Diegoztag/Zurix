@@ -75,47 +75,26 @@ $alto  : portrait;
 
 //Estilos básicos.
 
-  code, tt{
-    display: block;
-    padding: 5px 10px;
-    margin: 15px 0;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 1em;
-    white-space: pre-wrap;
-    background: #1E252A;
-    overflow: auto;
-    color: #E3EDF3;
-    border-radius: 0.3em;
-    -webkit-font-feature-settings: "liga" 0;
-    -moz-font-feature-settings: "liga" 0;
-    font-feature-settings: "liga" 0;
-  }
-
-  pre{
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1.5em 1em;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 0.9em;
+  code[class*="lang-"], pre[class*="lang-"]{
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; 
+    direction: ltr; 
+    text-align: left; 
     white-space: pre;
-    overflow: auto;
+    font-size: 14px;
+    word-spacing: normal;
+    word-break: normal; 
+    word-wrap: normal;
+    color: white;
+    tab-size: 1;
+    border-radius: 3px;
+    line-height: 1.5;
+  }
+
+  pre[class*="lang-"] {
     background: #1E252A;
-    border-radius: 3px;  
-  }
-
-  .cajacode{
-    display: block;
-    min-width: 700px;
-  }
-
-  .comment{
-    color: #708090;
-  }
-
-  .string{
-    color: #a6e22e;
+    margin: 2.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
   }
 
   *,

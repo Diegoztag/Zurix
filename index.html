@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<title>Zurix | Diseño a velocidad luz</title>
 	<link rel="stylesheet" href="css/zurix.css">
+	<link rel="stylesheet" href="css/monokai.css">
 </head>
 
 <body>
@@ -33,8 +34,8 @@
 					</div>
 
 					<ul class="menu__ul">
-						<li class="menu__item">1</li>
-						<li class="menu__item">2</li>
+						<li class="menu__item">Caracteristicas</li>
+						<li class="menu__item">Getting started</li>
 						<li class="menu__item">3</li>
 						<li class="menu__item">4</li>
 					</ul>
@@ -46,10 +47,36 @@
 	
 	<header class="head-main">
 		<div class="papa no-padding">
-			<div class="hijo banner column ">
+			<div class="hijo banner">
 				<h1 class="banner__title">Zurix</h1>
-				<h3 class="banner__subtitle">Diseño a velocidad luz</h3>
-				<img class="banner__icono" src="img/icon.png" alt="icon">
+				<h3 class="banner__subtitle">
+				Diseño a velocidad luz con zurix, framework HTML, mobile first y flexbox, agiliza tus proyectos web!!
+				</h3>
+
+				<div class="banner__downloads">
+					<div class="banner__btn-icono">
+						<img src="img/btn.png" alt="">
+						<img class="banner__icono" src="img/icon-black.png" alt="icon">	
+					</div>
+					<div class="banner__btn banner__btn1">
+						<a href="https://github.com/Diegoztag/Zurix/archive/master.zip">
+							<div class="content">
+								<img src="img/btn.png" alt="hexagon">
+								<b class="text-btn"></b>	
+							</div>
+						</a>
+					</div>
+
+					<div class="banner__btn banner__btn2">
+						<a href="">
+							<div class="content">
+								<img src="img/btn.png" alt="hexagon">
+								<b class="text-btn">zurix.zip</b>
+							</div>
+						</a>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</header>
@@ -59,13 +86,13 @@
 			<div class="hijo main base-85">
 				<p>Zurix es un framework exclusivamente CSS para crear diseños web responsive (RWD) y mobile first.</p>
 				<p>Desarolla geniales proyectos para cualquier tamaño de pantalla fácilmente, con zurix es alucinante lo fácil que resulta pues es senmántico, legible, flexible y absolutamente personalizable.</p>
-				<p>Creado en SASS, destinado para maquetación o estructura pura y en tiempo récord, no añade estilos predeterminados para evitar conflictos con proyectos en desarrollo y así olvidarse de las colisiones de estilos css framework-diseñador, dotado con todo el poder de flexbox!! es hora de olvidar los floats</p>
+				<p>Creado en SASS, destinado para maquetación o estructura pura y en tiempo récord, no añade estilos predeterminados para evitar conflictos con proyectos en desarrollo y así olvidarse de las colisiones de estilos css framework-diseñador, dotado con todo el poder de flexbox!! es hora de olvidar los floats.</p>
 				
 				<div class="papa no-padding caract-wrap">
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/1.png" alt="mobile fist">
 						<h3 class="caracteristicas__title">First mobile</h3>
-						<p>Zurix esta diseñado para ser first mobile, usted puede iniciar en dispositivos pequeños primero y a medida que el navegador se hace mas grande se puede ir añadiendo mas complejidad para un diseño organizado,aunque no esta escrito en piedra también puede iniciar en dispositivos grandes, solo es cuestión de gustos.</p>
+						<p>Zurix esta diseñado para ser first mobile, usted puede iniciar en dispositivos pequeños primero y a medida que el navegador se hace mas grande se puede ir añadiendo mas complejidad para un diseño organizado,aunque no esta escrito en piedra, también puede iniciar en dispositivos grandes, solo es cuestión de gustos.</p>
 					</div>
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/2.png" alt="versatil">
@@ -80,21 +107,24 @@
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/4.png" alt="personalizable">
 						<h3 class="caracteristicas__title">Personalizable</h3>
-						<p>En su versión Sass zurix es increíblemente personalizable, solo basta con modificar los valores de variables declaradas por defecto o crear propias, ademas que es muy liviano a comparación de otros frameworks</p>
+						<p>En su versión Sass zurix es increíblemente personalizable, solo basta con modificar los valores de variables declaradas por defecto o crear propias, ademas que es muy liviano a comparación de otros frameworks,</p>
 					</div>
 				</div>
 				
-				<h3 class="text-center">Empezando</h3>
+				<h3 class="text-center">Empezando a utilizar zurix</h3>
 				
-				<h5>Contenedores</h5>
-				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas (.papa) e hijos (.hijo) para tener una mejor comprensión y organización de contenedores se aconseja utilizar la etiqueta div para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
+				<h5>Contenedores padre</h5>
+
+				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas (.papa) e hijos (.hijo) para tener una mejor comprensión y organización de contenedores, se aconseja utilizar la etiqueta div para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
 				<p>Hay varios puntos que se tienen que dejar en claro en cuanto a el uso de contenedores papas e hijos en zurix:</p>
+
 				<ul class="">
-					<li>1.Los papas con los contenedores principales y los hijos son divisiones del contenedor papa.</li>
-					<li>2.Todo contenedor papa debe tener al menos un hijo y los hijos deben estar dentro de un papa.</li>
-					<li>3.Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase ".tamaño-x" o si es una fracción ".tamaño-x-y".</li>
+					<li class="icon-triangulo-derecha">Los papas con los contenedores principales y los hijos son divisiones del contenedor papa.</li>
+					<li class="icon-triangulo-derecha">Todo contenedor papa debe tener al menos un hijo y los hijos deben estar dentro de un papa.</li>
+					<li class="icon-triangulo-derecha">Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase ".tamaño-x" o si es una fracción ".tamaño-x-y".</li>
 				</ul>
-				<p>Ejemplo:</p>
+
+				<p>Observemos un ejemplo del manejo de contenedores (papas e hijos):</p>
 
 				<div class="papa text-center ejemplo-cajas">
 					<div class="hijo base-50"><p>Hola hijo 1</p></div>
@@ -105,27 +135,118 @@
 					<div class="hijo base-1-3"><p>Trillizos</p></div>
 					<div class="hijo full"><p>No yo soy mayor!! >:s</p></div>
 				</div>
-				
-				<pre class="line-numbers languaje-markup" data-languaje="Markup">
-					<code class="language-markup">
-						<div class="papa">
-							<div class="hijo base-50"><p>Hola hijo 1</p></div>
-							<div class="hijo base-50"><p>Hola hijo 2</p></div>
-							<div class="hijo full"><p>Yo soy mayor!! :D</p></div>
-							<div class="hijo base-1-3"><p>Trillizos</p></div>
-							<div class="hijo base-1-3"><p>Trillizos</p></div>
-							<div class="hijo base-1-3"><p>Trillizos</p></div>
-							<div class="hijo full"><p>No yo soy mayor!! >:s</p></div>
-						</div>
+
+				<p>El layout anterior fue generado con el siguiente código:</p>
+
+				<pre class="lang-xml">
+					<code class="lang-xml">
+						<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"papa"</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-50"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Hola hijo 1<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-50"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Hola hijo 2<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-full"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Yo soy mayor!! :D<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-1-3"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Trillizos<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-1-3"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Trillizos<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-1-3"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>Trillizos<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+
+							<span class="hljs-tag">&lt;<span>div <span class="hljs-attr">class</span>=<span class="hljs-string">"hijo base-full"</span>&gt;</span>
+								<span class="hljs-tag"><span class="hljs-tag">&lt;<span>p</span>&gt;</span>No yo soy mayor!! >:s<span class="hljs-tag">&lt;/<span>p</span>&gt;</span></span>
+							<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
+						<span class="hljs-tag">&lt;/<span>div</span>&gt;</span>
 					</code>
 				</pre>
+
+				<h5>Ancho de los contenedores .papa</h5>
+
+				<p>Como en todas las familias los padres son los eslabones primordiales de la casa, al igual en zurix los grupos con la clase .papa son los contenedores que albergan los divs .hijos
+				para su organización y función. Los contenedores .papa son los estelares del framework zurix y contienen las siguientes propiedades</p>
+
+				<pre class="lang-">
+					<code class="lang-">
+						<span class="hljs-name">.papa</span><span> {</span>
+								<span class="hljs-code">position</span><span>:</span> <span class="hljs-string">relative</span><span>;</span>
+								<span class="hljs-code">max-width</span><span>:</span> <span class="hljs-string">1100px</span><span>;</span>
+								<span class="hljs-code">margin</span><span>:</span> <span class="hljs-string">0 auto</span><span>;</span>
+						<span>}</span>
+					</code>
+				</pre>
+
+				<p>Como las propiedades mismas lo indican, el ancho maximo de los contenedores papas indican hasta cual es el limite que llegaran en este caso 1100px, con el margin 0 auto nos aseguramos que el contenedor estara centrado con respecto al cuerpo de la pagina o algún contenedor designado como principal</p>
+
+				<p>Si tu ventana o viewport tiene una dimensión mayor a la designada en este caso 1100px, el contenedor quedara en el centro y los espacios que sobran se repartirán por igual hacia los lados, si por algún motivo no quisieras que el ancho máximo del contenedor fuera de 1100px simplemente basta con sobrescribir en un css el valor nuevo que se le va a asignar, o mejor aun si usas sass en el archivo "zurix.scss" puedes modificar su valor directamente en su variable nombrada $max-width.</p>
+				
+				<h5>Media Queries</h5>
+
+				<p>Entrando en materia cuando hablamos de media queries, breakpoints o puntos de quiebre nos referimos a el punto en el que el tamaño del viewport o pantalla presenta cambios para adaptarse al tipo de resolución o dimensión del viewport y así evitar que las partes del diseño no se rompan y se genere un caos total.</p>
+
+				<p>Para que tu desarollo o proyecto web identifique los cambios de los media queries es necesario declarar una etiqueta meta llamada "viewport". La etiqueta viewport nos permite a los que construimos sitios web o web apps, definir el ancho, alto y escala del área usada por el navegador para mostrar contenido. A continuación la configuración más común de una etiqueta meta, esta etiqueta se debe de incluir en el html entre los tags o etiquetas "head".</p>
+
+				<pre class="lang-xml">
+					<code class="lang-xml">
+						<span class="hljs-tag">&lt;<span>meta name =<span class="hljs-attr"> "viewport"</span><span class="hljs-code"> content</span> =<span class="hljs-string"> "width=device-width, initial-scale=1, maximum-scale=1"</span>&gt;</span></span>
+					</code>
+				</pre>
+
+				<p>Como en todos o la mayoria de framework frontend css ofrecen la bondad de manipular media queries para tu beneficio, pues zurix no es la excepción</p>
+
+				<p>Zurix presenta por default varios breakpoints:</p>
+				<ul>
+					<li class="icon-triangulo-derecha"><b>Base</b>: 320px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>Movil</b>: 480px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>Tablet</b>: 768px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>Web</b>: 1024px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>Hd</b>: 1500px en adelante.</li>
+				</ul>
+
+				<p>Hay que recordar que zurix es un framework orientado a mobile first entonces los estilos que se determinen para un tamaño se heredan para los breakpoints sucesores.</p>
+
+				<p>En la versión Sass de zurix en el archivo base nombrado "zurix.scss" se pueden editar los tamaños de medias queries que se ofrecen por default declarados en un map estos definen los tamaños de los contenedores a través de clases, es por eso que se recomienda utilizar zurix en su versión sass si desea tener mayor personalización de framework.</p>
+				
+				<pre class="lang-">
+					<code class="lang-">
+						<span>$breakpoints:(</span>
+								<span class="hljs-code">base</span><span>:  </span>			<span>320px,</span>
+								<span class="hljs-code">movil</span><span>: </span>			<span>480px,</span>
+								<span class="hljs-code">tablet</span><span>:</span>			<span>768px,</span>
+								<span class="hljs-code">web</span><span>:   </span>			<span>1024px,</span>
+								<span class="hljs-code">hd</span><span>:    </span>			<span>1400px</span>
+						<span>)</span>
+					</code>
+				</pre>
+
+				
+
+
+
+
+
+
+
+
+
 			</div>
 		</div>
 	</section>
 
-
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
