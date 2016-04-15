@@ -2671,13 +2671,14 @@ class="no-padding" el hijo le da padding cero solo a este.
 
 .head-main {
   width: 100%;
-  height: 65vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -2742,6 +2743,7 @@ class="no-padding" el hijo le da padding cero solo a este.
 .banner {
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 2em;
 }
 .banner__title {
   color: #FDFDFD;
@@ -2806,8 +2808,13 @@ class="no-padding" el hijo le da padding cero solo a este.
   font-size: 13px;
 }
 
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
 h5 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 15px;
 }
 

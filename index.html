@@ -91,44 +91,44 @@
 				<div class="papa no-padding caract-wrap">
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/1.png" alt="mobile fist">
-						<h3 class="caracteristicas__title">First mobile</h3>
-						<p>Zurix esta diseñado para ser first mobile, usted puede iniciar en dispositivos pequeños primero y a medida que el navegador se hace mas grande se puede ir añadiendo mas complejidad para un diseño organizado,aunque no esta escrito en piedra, también puede iniciar en dispositivos grandes, solo es cuestión de gustos.</p>
+						<h3 class="caracteristicas__title">Mobile first</h3>
+						<p>Zurix esta diseñado para ser mobile first, usted puede iniciar en dispositivos pequeños primero y a medida que el navegador se hace mas grande se puede ir añadiendo mas complejidad para un diseño organizado,aunque esto no esta escrito en piedra, también puedes iniciar en dispositivos grandes, solo es cuestión de gustos.</p>
 					</div>
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/2.png" alt="versatil">
 						<h3 class="caracteristicas__title">Versatilidad</h3>
-						<p>Destinado para la maquetación o estructura pura, zurix no tiene css visual preestablecido para que esto no choque con el css del diseñador, cosa que hace de este framework genial para incluir en proyectos en desarrollo con la seguridad de que no habrá inconvenientes o rupturas del esquema</p>
+						<p>Destinado para la maquetación o estructura pura, zurix no tiene css visual preestablecido para que esto no choque con el css del diseñador, cosa que hace de este framework genial para incluir en proyectos en desarrollo con la seguridad de que no habrá inconvenientes o rupturas en esquema visual.</p>
 					</div>
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/3.png" alt="intuitivo">
 						<h3 class="caracteristicas__title">Intuitivo</h3>
-						<p>Esta diseñado para ser rápido, sencillo y generar una curva de aprendizaje mínima, los nombres de las clases son muy fáciles de memorizar, utiliza zurix por un rato y en un pestañeo lo dominaras como un pro.</p>
+						<p>Esta diseñado para ser rápido, sencillo y generar una curva de aprendizaje mínima, los nombres de las clases son muy fáciles de memorizar, utiliza zurix por un rato y en un pestañeo estarás haciendo magia.</p>
 					</div>
 					<div class="hijo caracteristicas">
 						<img class="caracteristicas__flat" src="img/4.png" alt="personalizable">
 						<h3 class="caracteristicas__title">Personalizable</h3>
-						<p>En su versión Sass zurix es increíblemente personalizable, solo basta con modificar los valores de variables declaradas por defecto o crear propias, ademas que es muy liviano a comparación de otros frameworks,</p>
+						<p>En su versión Sass zurix es increíblemente personalizable, solo basta con modificar los valores de variables declaradas por defecto o crear tus propias variables, ademas que es muy liviano a comparación de otros frameworks,</p>
 					</div>
 				</div>
 				
-				<h3 class="text-center">Empezando a utilizar zurix</h3>
+				<h3 class="text-center">Iniciando con zurix</h3>
 				
 				<h5>Contenedores padre</h5>
 
-				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas (.papa) e hijos (.hijo) para tener una mejor comprensión y organización de contenedores, se aconseja utilizar la etiqueta div para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
+				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas (papa) e hijos (hijo) para tener una mejor comprensión y organización de contenedores, aquí se aconseja utilizar la etiqueta div para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
 				<p>Hay varios puntos que se tienen que dejar en claro en cuanto a el uso de contenedores papas e hijos en zurix:</p>
 
 				<ul class="">
 					<li class="icon-triangulo-derecha">Los papas con los contenedores principales y los hijos son divisiones del contenedor papa.</li>
 					<li class="icon-triangulo-derecha">Todo contenedor papa debe tener al menos un hijo y los hijos deben estar dentro de un papa.</li>
-					<li class="icon-triangulo-derecha">Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase ".tamaño-x" o si es una fracción ".tamaño-x-y".</li>
+					<li class="icon-triangulo-derecha">Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase "tamaño-x" o si es una fracción "tamaño-x-y".</li>
 				</ul>
 
-				<p>Observemos un ejemplo del manejo de contenedores (papas e hijos):</p>
+				<p>Observemos un ejemplo del manejo de contenedores (papas e hijos), el papa o contenedor principal esta delimitado por lineas color verde y los hijos están con lineas obscuras:</p>
 
 				<div class="papa text-center ejemplo-cajas">
-					<div class="hijo base-50"><p>Hola hijo 1</p></div>
-					<div class="hijo base-50"><p>Hola hijo 2</p></div>
+					<div class="hijo base-50"><p>Soy Gemelo</p></div>
+					<div class="hijo base-50"><p>Soy Gemelo</p></div>
 					<div class="hijo full"><p>Yo soy mayor!! :D</p></div>
 					<div class="hijo base-1-3"><p>Trillizos</p></div>
 					<div class="hijo base-1-3"><p>Trillizos</p></div>
@@ -172,7 +172,7 @@
 					</code>
 				</pre>
 
-				<h5>Ancho de los contenedores .papa</h5>
+				<h5>Ancho de los contenedores padres</h5>
 
 				<p>Como en todas las familias los padres son los eslabones primordiales de la casa, al igual en zurix los grupos con la clase .papa son los contenedores que albergan los divs .hijos
 				para su organización y función. Los contenedores .papa son los estelares del framework zurix y contienen las siguientes propiedades</p>
@@ -191,7 +191,7 @@
 
 				<p>Si tu ventana o viewport tiene una dimensión mayor a la designada en este caso 1100px, el contenedor quedara en el centro y los espacios que sobran se repartirán por igual hacia los lados, si por algún motivo no quisieras que el ancho máximo del contenedor fuera de 1100px simplemente basta con sobrescribir en un css el valor nuevo que se le va a asignar, o mejor aun si usas sass en el archivo "zurix.scss" puedes modificar su valor directamente en su variable nombrada $max-width.</p>
 				
-				<h5>Media Queries</h5>
+				<h5>Media queries</h5>
 
 				<p>Entrando en materia cuando hablamos de media queries, breakpoints o puntos de quiebre nos referimos a el punto en el que el tamaño del viewport o pantalla presenta cambios para adaptarse al tipo de resolución o dimensión del viewport y así evitar que las partes del diseño no se rompan y se genere un caos total.</p>
 
@@ -205,7 +205,7 @@
 
 				<p>Como en todos o la mayoria de framework frontend css ofrecen la bondad de manipular media queries para tu beneficio, pues zurix no es la excepción</p>
 
-				<p>Zurix presenta por default varios breakpoints:</p>
+				<p>Zurix presenta por default varios breakpoints o tamaños:</p>
 				<ul>
 					<li class="icon-triangulo-derecha"><b>Base</b>: 320px en adelante.</li>
 					<li class="icon-triangulo-derecha"><b>Movil</b>: 480px en adelante.</li>
@@ -229,6 +229,40 @@
 						<span>)</span>
 					</code>
 				</pre>
+
+				<h5>Ancho de elementos del DOM</h5>
+
+				<p>Con zurix es fácil asignar y controlar el manejo de los anchos de elementos del HTML, como por ejemplo párrafos, imágenes, vídeos, contenedores, menús, todo lo que se te ocurra, esto hace a zurix una herramienta extremadamente fácil de utilizar para controlar rápidamente el width o anchura de objetos del html.</p>
+
+				<p>Para realizar esto simplemente es necesario asignar una clase a la etiqueta del elemento que se quiere manipular, esta clase estará designada por las medidas de los breakpoints (base,movil,tablet,web,hd) y el numero entero del (5 al 100 pero siempre siendo múltiplo de 5) que representa el porcentaje que se asignara de anchura al elemento.</p>
+
+				<p>Ahora bien la clase quedaría dada por la siguiente expresión: <b>"medida-x"</b> siendo "medida" como mencionamos anteriormente el tamaño de un breakpoint y "x" el porcentaje de anchura que tendrá el elemento.  Veamos unos ejemplos:</p>
+
+				<p>Si queremos un imagen que tenga un 50% del ancho del navegador en su tamaño web "1024px en adelante" entonces añadiremos a la etiqueta "img" la siguiente clase:</p>
+
+				<pre class="lang-html">
+					<code class="lang-html">
+						<span class="hljs-tag">&lt;<span>img<span class="hljs-attr"> class</span><span> =</span><span class="hljs-code"> "web-50"</span><span class="hljs-string"> src="http://lorempixel.com/100/100/"</span>&gt;</span></span>
+					</code>
+				</pre>
+
+				<p>Muy bien!! cuando el viewport sobrepasa los 1024px se activa nuestra clase y se adapta el ancho del elemento, pero que pasa cuando la ventana es menor de 1024px??, simple, la clase con el ancho que declaramos ya no tiene efecto y el ancho de la imagen se devuelve a su estado original por que la ventana ya no es de tamaño "web", si no se redujo a tamaño tableta o menor.</p>
+
+				<p>Hagamos otro ejemplo para dejar bien claro esto que mencione, veamos en esta ocasión quiero la misma imagen, pero quiero que en su ancho para móviles tenga un 50%, cuando salte al tamaño para tableta tenga digamos un 80% y al pasar al tamaño web un 30% de anchura, entonces la etiqueta quedaría declarada con estas clases:</p>
+
+				<pre class="lang-html">
+					<code class="lang-html">
+						<span class="hljs-tag">&lt;<span>img<span class="hljs-attr"> class</span><span> =</span><span class="hljs-code"> "movil-50 tablet-80 web-30"</span><span class="hljs-string"> src="http://lorempixel.com/100/100/"</span>&gt;</span></span>
+					</code>
+				</pre>
+
+				<p>A que te recuerda esto?? si alguna vez usaste boostraps o foundation utilizabas las medidas para indicar hasta donde se mantendrían los anchos de las clases, por ejemplo bootstraps utiliza las medidas de sus clases (xs,sm,md,ls,xl), si te pones a pensar es realmente casi lo mismo en zurix solo que aquí se declaran (base,movil,tablet,web,hd)</p>
+
+				<p>Hay que puntualizar una cosa, he de recordar que las medidas que mencione antes (base,movil,etc) son las de default y son las medidas mas utilizadas en cuanto a la dimensión de pantallas como por ejemplo en celulares, en tablets, pantallas de computadoras o laptops, pero si utilizas Sass puedes fácilmente crear mas breakpoints personalizados e incluir sus medidas a esta función.</p>
+
+				
+
+				
 
 				
 
