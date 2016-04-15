@@ -214,6 +214,8 @@
 					<li class="icon-triangulo-derecha"><b>Hd</b>: 1500px en adelante.</li>
 				</ul>
 
+				<img class="img-breakpoints center" src="img/breakpoints.jpg" alt="">
+
 				<p>Hay que recordar que zurix es un framework orientado a mobile first entonces los estilos que se determinen para un tamaño se heredan para los breakpoints sucesores.</p>
 
 				<p>En la versión Sass de zurix en el archivo base nombrado "zurix.scss" se pueden editar los tamaños de medias queries que se ofrecen por default declarados en un map estos definen los tamaños de los contenedores a través de clases, es por eso que se recomienda utilizar zurix en su versión sass si desea tener mayor personalización de framework.</p>
@@ -234,9 +236,9 @@
 
 				<p>Con zurix es fácil asignar y controlar el manejo de los anchos de elementos del HTML, como por ejemplo párrafos, imágenes, vídeos, contenedores, menús, todo lo que se te ocurra, esto hace a zurix una herramienta extremadamente fácil de utilizar para controlar rápidamente el width o anchura de objetos del html.</p>
 
-				<p>Para realizar esto simplemente es necesario asignar una clase a la etiqueta del elemento que se quiere manipular, esta clase estará designada por las medidas de los breakpoints (base,movil,tablet,web,hd) y el numero entero del (5 al 100 pero siempre siendo múltiplo de 5) que representa el porcentaje que se asignara de anchura al elemento.</p>
+				<p>Para realizar esto simplemente es necesario asignar una clase a la etiqueta del elemento que se quiere manipular, esta clase estará designada por las medidas de los breakpoints (base,movil,tablet,web,hd) y el numero entero del (5 al 100 pero siempre siendo múltiplo de 5) que representa el porcentaje que se asignara de anchura al elemento o tambien se puede definir con fracciones en lugar de porcentajes siendo (1-3 , 1-6, etc).</p>
 
-				<p>Ahora bien la clase quedaría dada por la siguiente expresión: <b>"medida-x"</b> siendo "medida" como mencionamos anteriormente el tamaño de un breakpoint y "x" el porcentaje de anchura que tendrá el elemento.  Veamos unos ejemplos:</p>
+				<p>Ahora bien la clase quedaría dada por la siguiente expresión: <b>"medida-x"</b> siendo "medida" como mencionamos anteriormente el tamaño de un breakpoint y "x" el porcentaje o fracción de la anchura que tendrá el elemento.  Veamos unos ejemplos:</p>
 
 				<p>Si queremos un imagen que tenga un 50% del ancho del navegador en su tamaño web "1024px en adelante" entonces añadiremos a la etiqueta "img" la siguiente clase:</p>
 
@@ -246,19 +248,27 @@
 					</code>
 				</pre>
 
-				<p>Muy bien!! cuando el viewport sobrepasa los 1024px se activa nuestra clase y se adapta el ancho del elemento, pero que pasa cuando la ventana es menor de 1024px??, simple, la clase con el ancho que declaramos ya no tiene efecto y el ancho de la imagen se devuelve a su estado original por que la ventana ya no es de tamaño "web", si no se redujo a tamaño tableta o menor.</p>
+				<p>Muy bien!! cuando el viewport sobrepasa los 1024px se activa nuestra clase y se adapta el ancho del elemento, pero que pasa cuando la ventana es menor de 1024px??, simple, la clase con el ancho que declaramos ya no tiene efecto y el ancho de la imagen se devuelve a su estado original por que la ventana ya no es de tamaño "web", si no que se redujo a tamaño tableta o menor.</p>
 
-				<p>Hagamos otro ejemplo para dejar bien claro esto que mencione, veamos en esta ocasión quiero la misma imagen, pero quiero que en su ancho para móviles tenga un 50%, cuando salte al tamaño para tableta tenga digamos un 80% y al pasar al tamaño web un 30% de anchura, entonces la etiqueta quedaría declarada con estas clases:</p>
+				<p>Hagamos otro ejemplo para dejar bien claro esto que mencione, veamos en esta ocasión quiero la misma imagen, pero quiero que en su ancho para móviles tenga un 50%, cuando salte al tamaño para tableta tenga digamos un 80% y al pasar al tamaño web tenga 1/3 de su anchura total y cuando salte a tamaño hd tenga un 100% de anchura, entonces la etiqueta quedaría declarada con estas clases:</p>
 
 				<pre class="lang-html">
 					<code class="lang-html">
-						<span class="hljs-tag">&lt;<span>img<span class="hljs-attr"> class</span><span> =</span><span class="hljs-code"> "movil-50 tablet-80 web-30"</span><span class="hljs-string"> src="http://lorempixel.com/100/100/"</span>&gt;</span></span>
+						<span class="hljs-tag">&lt;<span>img<span class="hljs-attr"> class</span><span> =</span><span class="hljs-code"> "movil-50 tablet-80 web-1-3"</span><span class="hljs-string"> src="http://lorempixel.com/100/100/"</span>&gt;</span></span>
 					</code>
 				</pre>
 
-				<p>A que te recuerda esto?? si alguna vez usaste boostraps o foundation utilizabas las medidas para indicar hasta donde se mantendrían los anchos de las clases, por ejemplo bootstraps utiliza las medidas de sus clases (xs,sm,md,ls,xl), si te pones a pensar es realmente casi lo mismo en zurix solo que aquí se declaran (base,movil,tablet,web,hd)</p>
+				<p>Para declarar que un elemento del html abarque todo el 100 del viewport y heredado a todos los tamaños de breakpoint simplemente se añade la clase "total o full".</p>
 
-				<p>Hay que puntualizar una cosa, he de recordar que las medidas que mencione antes (base,movil,etc) son las de default y son las medidas mas utilizadas en cuanto a la dimensión de pantallas como por ejemplo en celulares, en tablets, pantallas de computadoras o laptops, pero si utilizas Sass puedes fácilmente crear mas breakpoints personalizados e incluir sus medidas a esta función.</p>
+				<pre class="lang-html">
+					<code class="lang-html">
+						<span class="hljs-tag">&lt;<span>img<span class="hljs-attr"> class</span><span> =</span><span class="hljs-code"> "total"</span><span class="hljs-string"> src="http://lorempixel.com/100/100/"</span>&gt;</span></span>
+					</code>
+				</pre>
+
+				<p>A que te recuerda esto?? si alguna vez usaste boostraps o foundation utilizabas las medidas para indicar hasta donde se mantendrían los anchos de las clases mediante columnas, por ejemplo bootstraps utiliza las medidas de sus clases (xs,sm,md,ls,xl) y seguido por el numero de columnas, si te pones a pensar es realmente casi lo mismo en zurix solo que aquí se declaran (base,movil,tablet,web,hd) y en vez de columnas definimos porcentajes o fracciones.</p>
+
+				<p>Hay que puntualizar una cosa, he de recordar que las medidas que mencionamos antes (base,móvil,etc) son las predefinidas por default y son las medidas mas utilizadas en cuanto a la dimensión de pantallas como por ejemplo en celulares, en tablets, pantallas de computadoras o laptops, pero si utilizas Sass puedes fácilmente modificar o crear mas breakpoints personalizados e incluir sus medidas a esta función.</p>
 
 				
 
