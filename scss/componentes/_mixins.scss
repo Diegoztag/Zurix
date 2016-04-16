@@ -1,5 +1,15 @@
 // Mixins para media queries
 
+// Orientación del viewport screen.
+// No editar (Importante).
+$pantalla : (
+  ancho   : landscape,
+  alto    : portrait
+);
+
+$ancho : landscape;
+$alto  : portrait;
+
 @mixin hasta($size){
   @if map-has-key($breakpoints,$size){
     @media screen and (max-width: map-get($breakpoints,$size) - 1){
@@ -189,32 +199,4 @@
   height         : 0;
   overflow       : hidden;
   padding-bottom : $width * ($v/$h);
-}
-
-@mixin limpiar {
-  &:before,&:after{
-    content: "";
-    width: 100%;
-    display: table;
-    clear: both;
-  }
-}
-
-@mixin derecha($width:auto,$margin-left:1em){
-  float: right;
-  width: $width;
-  margin-left: $margin-left;
-}
-
-@mixin izquierda($width:auto,$margin-right:1em){
-  float: left;
-  width: $width;
-  margin-right: $margin-right;
-}
-
-@mixin centro($width:auto){
-  display: table;
-  width: $width;
-  margin-left: auto;
-  margin-right: auto;
 }

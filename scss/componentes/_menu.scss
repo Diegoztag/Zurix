@@ -44,7 +44,7 @@
   }
 }
 
-// Mixin que genera el menu vertical dependiendo de breakpoints tableo o web
+// Mixin que genera el menu vertical dependiendo de breakpoints tablet o web
 @mixin menuh($size) {
   @include from($size){
     display: flex;

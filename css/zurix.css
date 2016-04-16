@@ -1,86 +1,5 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  background: #FDFDFD;
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #2d2d2d;
-}
-
-p, blockquote, li {
-  font-size: 1em;
-  line-height: 1.5;
-  list-style: none;
-}
-
-p {
-  margin: 0 0 1.5em 0;
-}
-p:last-child, p:only-child {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  text-transform: normal;
-  color: #2d2d2d;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 1.7em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
-h4 {
-  font-size: 1.1em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.9em;
-}
-
-/*
-  Las clases .papa .dad .contenedor .container son los
-  contenedores para las cajas con clase .hijo .item .son.
-
-  En Zurix los grupos son containers o papas y las
-  cajas son items o hijos.
-*/
 .papa,
 .dad,
 .contenedor,
@@ -111,262 +30,262 @@ h6 {
   width: 100%;
 }
 
-.base-5,
-.item.base-5,
-.hijo.base-5,
-.son.base-5 {
+.mini-5,
+.item.mini-5,
+.hijo.mini-5,
+.son.mini-5 {
   width: 5%;
 }
 
-.base-10,
-.item.base-10,
-.hijo.base-10,
-.son.base-10 {
+.mini-10,
+.item.mini-10,
+.hijo.mini-10,
+.son.mini-10 {
   width: 10%;
 }
 
-.base-15,
-.item.base-15,
-.hijo.base-15,
-.son.base-15 {
+.mini-15,
+.item.mini-15,
+.hijo.mini-15,
+.son.mini-15 {
   width: 15%;
 }
 
-.base-20,
-.item.base-20,
-.hijo.base-20,
-.son.base-20 {
+.mini-20,
+.item.mini-20,
+.hijo.mini-20,
+.son.mini-20 {
   width: 20%;
 }
 
-.base-25,
-.item.base-25,
-.hijo.base-25,
-.son.base-25 {
+.mini-25,
+.item.mini-25,
+.hijo.mini-25,
+.son.mini-25 {
   width: 25%;
 }
 
-.base-30,
-.item.base-30,
-.hijo.base-30,
-.son.base-30 {
+.mini-30,
+.item.mini-30,
+.hijo.mini-30,
+.son.mini-30 {
   width: 30%;
 }
 
-.base-35,
-.item.base-35,
-.hijo.base-35,
-.son.base-35 {
+.mini-35,
+.item.mini-35,
+.hijo.mini-35,
+.son.mini-35 {
   width: 35%;
 }
 
-.base-40,
-.item.base-40,
-.hijo.base-40,
-.son.base-40 {
+.mini-40,
+.item.mini-40,
+.hijo.mini-40,
+.son.mini-40 {
   width: 40%;
 }
 
-.base-45,
-.item.base-45,
-.hijo.base-45,
-.son.base-45 {
+.mini-45,
+.item.mini-45,
+.hijo.mini-45,
+.son.mini-45 {
   width: 45%;
 }
 
-.base-50,
-.item.base-50,
-.hijo.base-50,
-.son.base-50 {
+.mini-50,
+.item.mini-50,
+.hijo.mini-50,
+.son.mini-50 {
   width: 50%;
 }
 
-.base-55,
-.item.base-55,
-.hijo.base-55,
-.son.base-55 {
+.mini-55,
+.item.mini-55,
+.hijo.mini-55,
+.son.mini-55 {
   width: 55%;
 }
 
-.base-60,
-.item.base-60,
-.hijo.base-60,
-.son.base-60 {
+.mini-60,
+.item.mini-60,
+.hijo.mini-60,
+.son.mini-60 {
   width: 60%;
 }
 
-.base-65,
-.item.base-65,
-.hijo.base-65,
-.son.base-65 {
+.mini-65,
+.item.mini-65,
+.hijo.mini-65,
+.son.mini-65 {
   width: 65%;
 }
 
-.base-70,
-.item.base-70,
-.hijo.base-70,
-.son.base-70 {
+.mini-70,
+.item.mini-70,
+.hijo.mini-70,
+.son.mini-70 {
   width: 70%;
 }
 
-.base-75,
-.item.base-75,
-.hijo.base-75,
-.son.base-75 {
+.mini-75,
+.item.mini-75,
+.hijo.mini-75,
+.son.mini-75 {
   width: 75%;
 }
 
-.base-80,
-.item.base-80,
-.hijo.base-80,
-.son.base-80 {
+.mini-80,
+.item.mini-80,
+.hijo.mini-80,
+.son.mini-80 {
   width: 80%;
 }
 
-.base-85,
-.item.base-85,
-.hijo.base-85,
-.son.base-85 {
+.mini-85,
+.item.mini-85,
+.hijo.mini-85,
+.son.mini-85 {
   width: 85%;
 }
 
-.base-90,
-.item.base-90,
-.hijo.base-90,
-.son.base-90 {
+.mini-90,
+.item.mini-90,
+.hijo.mini-90,
+.son.mini-90 {
   width: 90%;
 }
 
-.base-95,
-.item.base-95,
-.hijo.base-95,
-.son.base-95 {
+.mini-95,
+.item.mini-95,
+.hijo.mini-95,
+.son.mini-95 {
   width: 95%;
 }
 
-.base-100,
-.item.base-100,
-.hijo.base-100,
-.son.base-100 {
+.mini-100,
+.item.mini-100,
+.hijo.mini-100,
+.son.mini-100 {
   width: 100%;
 }
 
-.base-1-3,
-.item.base-1-3,
-.hijo.base-1-3,
-.son.base-1-3 {
+.mini-1-3,
+.item.mini-1-3,
+.hijo.mini-1-3,
+.son.mini-1-3 {
   width: 33.33333%;
 }
 
-.base-2-3,
-.item.base-2-3,
-.hijo.base-2-3,
-.son.base-2-3 {
+.mini-2-3,
+.item.mini-2-3,
+.hijo.mini-2-3,
+.son.mini-2-3 {
   width: 66.66667%;
 }
 
-.base-3-3,
-.item.base-3-3,
-.hijo.base-3-3,
-.son.base-3-3 {
+.mini-3-3,
+.item.mini-3-3,
+.hijo.mini-3-3,
+.son.mini-3-3 {
   width: 100%;
 }
 
-.base-1-6,
-.item.base-1-6,
-.hijo.base-1-6,
-.son.base-1-6 {
+.mini-1-6,
+.item.mini-1-6,
+.hijo.mini-1-6,
+.son.mini-1-6 {
   width: 16.66667%;
 }
 
-.base-2-6,
-.item.base-2-6,
-.hijo.base-2-6,
-.son.base-2-6 {
+.mini-2-6,
+.item.mini-2-6,
+.hijo.mini-2-6,
+.son.mini-2-6 {
   width: 33.33333%;
 }
 
-.base-3-6,
-.item.base-3-6,
-.hijo.base-3-6,
-.son.base-3-6 {
+.mini-3-6,
+.item.mini-3-6,
+.hijo.mini-3-6,
+.son.mini-3-6 {
   width: 50%;
 }
 
-.base-4-6,
-.item.base-4-6,
-.hijo.base-4-6,
-.son.base-4-6 {
+.mini-4-6,
+.item.mini-4-6,
+.hijo.mini-4-6,
+.son.mini-4-6 {
   width: 66.66667%;
 }
 
-.base-5-6,
-.item.base-5-6,
-.hijo.base-5-6,
-.son.base-5-6 {
+.mini-5-6,
+.item.mini-5-6,
+.hijo.mini-5-6,
+.son.mini-5-6 {
   width: 83.33333%;
 }
 
-.base-6-6,
-.item.base-6-6,
-.hijo.base-6-6,
-.son.base-6-6 {
+.mini-6-6,
+.item.mini-6-6,
+.hijo.mini-6-6,
+.son.mini-6-6 {
   width: 100%;
 }
 
-.base-1-8,
-.item.base-1-8,
-.hijo.base-1-8,
-.son.base-1-8 {
+.mini-1-8,
+.item.mini-1-8,
+.hijo.mini-1-8,
+.son.mini-1-8 {
   width: 12.5%;
 }
 
-.base-2-8,
-.item.base-2-8,
-.hijo.base-2-8,
-.son.base-2-8 {
+.mini-2-8,
+.item.mini-2-8,
+.hijo.mini-2-8,
+.son.mini-2-8 {
   width: 25%;
 }
 
-.base-3-8,
-.item.base-3-8,
-.hijo.base-3-8,
-.son.base-3-8 {
+.mini-3-8,
+.item.mini-3-8,
+.hijo.mini-3-8,
+.son.mini-3-8 {
   width: 37.5%;
 }
 
-.base-4-8,
-.item.base-4-8,
-.hijo.base-4-8,
-.son.base-4-8 {
+.mini-4-8,
+.item.mini-4-8,
+.hijo.mini-4-8,
+.son.mini-4-8 {
   width: 50%;
 }
 
-.base-5-8,
-.item.base-5-8,
-.hijo.base-5-8,
-.son.base-5-8 {
+.mini-5-8,
+.item.mini-5-8,
+.hijo.mini-5-8,
+.son.mini-5-8 {
   width: 62.5%;
 }
 
-.base-6-8,
-.item.base-6-8,
-.hijo.base-6-8,
-.son.base-6-8 {
+.mini-6-8,
+.item.mini-6-8,
+.hijo.mini-6-8,
+.son.mini-6-8 {
   width: 75%;
 }
 
-.base-7-8,
-.item.base-7-8,
-.hijo.base-7-8,
-.son.base-7-8 {
+.mini-7-8,
+.item.mini-7-8,
+.hijo.mini-7-8,
+.son.mini-7-8 {
   width: 87.5%;
 }
 
-.base-8-8,
-.item.base-8-8,
-.hijo.base-8-8,
-.son.base-8-8 {
+.mini-8-8,
+.item.mini-8-8,
+.hijo.mini-8-8,
+.son.mini-8-8 {
   width: 100%;
 }
 
@@ -1410,6 +1329,80 @@ h6 {
     width: 100%;
   }
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFDFD;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+p, blockquote, li {
+  font-size: 1em;
+  line-height: 1.5;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+p:last-child, p:only-child {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  text-transform: normal;
+  color: #2d2d2d;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
 @media screen and (min-width: 480px) {
   .movil-order-1 {
     order: 1;
@@ -2056,10 +2049,6 @@ h6 {
   text-align: center;
 }
 
-/*
-Agregar la clase "desarrollo" o "design" a la etiqueta <body> 
-para tener perspectiva de desarrollo del DOM al usar zurix.
-*/
 body.desarrollo, body.design {
   margin: 0 !important;
 }
@@ -2357,12 +2346,12 @@ body.desarrollo:before, body.design:before {
 }
 
 .izquierda-texto,
-.izquierda-contenido {
+.text-left {
   text-align: left;
 }
 
 .derecha-texto,
-.derecha-contenido {
+.text-right {
   text-align: right;
 }
 
@@ -3636,10 +3625,9 @@ class="no-padding" el hijo le da padding cero solo a este.
   background-color: #f5f5f5;
   border: 1px solid #f5f5f5;
   border-collapse: collapse;
-  color: #070D12;
   margin-bottom: 20px;
   max-width: 100%;
-  margin: 10px;
+  margin: 10px auto;
 }
 .tabla th,
 .tabla td,
@@ -3687,7 +3675,7 @@ class="no-padding" el hijo le da padding cero solo a este.
   color: #070D12;
   margin-bottom: 20px;
   max-width: 100%;
-  margin: 10px;
+  margin: 10px auto;
 }
 .tabla-responsiva th,
 .tabla-responsiva td,
@@ -3719,8 +3707,8 @@ class="no-padding" el hijo le da padding cero solo a este.
 }
 .tabla-responsiva th,
 .table-responsive th {
-  background-color: #444;
-  color: #ccc;
+  background-color: #777676;
+  color: #FDFDFD;
   text-align: left;
   font-weight: normal;
   padding: 5px 14px;

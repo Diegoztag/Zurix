@@ -1,6 +1,6 @@
 
 
-# Zurix 1.0.2
+# Zurix 1.0.3
 
 ### ❤ Sass • CSS ❤ 
 
@@ -20,6 +20,11 @@ El siguiente repositorio contienen las carpetas:
 2.- fonts: contiene los __font-face o fuentes__ de iconografía incluidos en el framework.
 
 3.- scss: contiene __zurix.scss__ el framework zurix en su versión sass, puede copiar esta carpeta en sus proyectos para incluir zurix con sass.
+
+
+__Documentación__
+
+http://diegoztag.github.io/Zurix/
 
 
 ## Contacto

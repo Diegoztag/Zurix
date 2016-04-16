@@ -1,11 +1,3 @@
-/*
-  Las clases .papa .dad .contenedor .container son los
-  contenedores para las cajas con clase .hijo .item .son.
-
-  En Zurix los grupos son containers o papas y las
-  cajas son items o hijos.
-*/
-
 .papa,
 .dad,
 .contenedor, 
@@ -34,10 +26,10 @@
 
 // Ancho determinado en porcentaje.
 @for $i from 1 through 20 {
-  .base-#{$i*5},
-  .item.base-#{$i*5},
-  .hijo.base-#{$i*5},
-  .son.base-#{$i*5}{
+  .mini-#{$i*5},
+  .item.mini-#{$i*5},
+  .hijo.mini-#{$i*5},
+  .son.mini-#{$i*5}{
     width: unquote($i*5 + "%");
   }
 }
@@ -45,15 +37,14 @@
 // Ancho determinado en fracciones
 @each $fraccion-nombre, $fraccion in $fracciones{
   @for $i from 1 through $fraccion{
-    .base-#{$i}-#{$fraccion},
-    .item.base-#{$i}-#{$fraccion},
-    .hijo.base-#{$i}-#{$fraccion},
-    .son.base-#{$i}-#{$fraccion}{
+    .mini-#{$i}-#{$fraccion},
+    .item.mini-#{$i}-#{$fraccion},
+    .hijo.mini-#{$i}-#{$fraccion},
+    .son.mini-#{$i}-#{$fraccion}{
       width: (100% / $fraccion) * $i;
     }
   }
 }
-
 
 // Breakpoints
 @each $size, $screen-size in $breakpoints{
@@ -66,6 +57,7 @@
         width: unquote($i*5 + "%");
       }
     }
+    
     @each $fraccion-nombre, $fraccion in $fracciones{
       @for $i from 1 through $fraccion{
         .#{$size}-#{$i}-#{$fraccion},

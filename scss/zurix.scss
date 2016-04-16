@@ -3,7 +3,6 @@
 //Fuentes o Fonts. Agregue el @import de Google-Fonts o bien su fuente personalizada
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
 
-
 // Ancho máximo que puede alcanzar el contenedor principal o papá.
 $max-width: 1200px;
 
@@ -32,17 +31,7 @@ $fracciones: (
   octavos : 8
 );
 
-// Orientación del viewport screen.
-// No editar (Importante).
-$pantalla : (
-  ancho   : landscape,
-  alto    : portrait
-);
-
-$ancho : landscape;
-$alto  : portrait;
-
-// Muestras de colores, modifique para crear su paleta de color personalizada.
+// Muestras de colores
   $blanco : #FDFDFD;
   $negro  : #070D12;
 
@@ -73,90 +62,15 @@ $alto  : portrait;
   $p-line-height : 1.5;        // Altura de línea.
   $p-margin      : 1.5em;      // Margen o separación.
 
-//Estilos básicos.
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  body {
-    background  : $body-background;
-    font-family : $body-font;
-    color       : $body-color;
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    text-decoration : none;
-    color           : $link-color;
-  }
-
-  p, blockquote, li {
-    font-size   : $p-font-size;
-    line-height : $p-line-height;
-    list-style  : none;
-  }
-
-  p {
-    margin : 0 0 $p-margin 0;
-    &:last-child,
-    &:only-child {
-        margin: 0;
-    }
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  figure {
-    margin: 0;
-    padding: 0;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family    : $header-font;
-    font-weight    : $header-font-weight;
-    text-transform : $header-text-transform;
-    color          : $header-color;
-  }
-
-  h1 {
-    font-size : $h1-font-size;
-    line-height: 1.2;
-  }
-
-  h2 {
-    font-size : $h2-font-size;
-  }
-
-  h3 {
-    font-size : $h3-font-size;
-  }
-
-  h4 {
-    font-size : $h4-font-size;
-  }
-
-  h5 {
-    font-size : $h5-font-size;
-  }
-
-  h6 {
-    font-size : $h6-font-size;
-  }
-
 // Módulos de Zurix
 //NOTA: para mejorar el rendimiento del framework desactive los módulos que no se usaran
 //aplicando doble slash "//" antes de @import.
 @import "componentes/core";        // Núcleo base de Zurix.
+@import "componentes/base";        // Estilos base a elementos html sin clases o id
 @import "componentes/mixins";      // Mixins
 @import "componentes/flexbox";     // Flexbox
 @import "componentes/desarrollo";  // Modo desarrollo
-@import "componentes/visibilidad"; // Controlar la visibilidad
+@import "componentes/visibilidad"; // Controlar la visibilidad de elementos
 @import "componentes/utilidades";  // Utilidades adicionales
 @import "componentes/video";       // Videos responsive
 @import "componentes/menu";        // Zurix menu

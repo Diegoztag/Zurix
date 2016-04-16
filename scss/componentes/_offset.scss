@@ -1,4 +1,5 @@
 // Seccion para definir los offsets
+
 @each $size, $screen-size in $breakpoints{
   @media all and (min-width: $screen-size){
     // Tamaños en porcentajes
