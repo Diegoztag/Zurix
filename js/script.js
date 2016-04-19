@@ -14,4 +14,10 @@ $(document).ready(function() {
 	});		
 });
 
+//Script desplazamiento boton abajo-----------------------
+$(document).ready(function () {
+	$('.banner__abajo').on('click',function () {
+		$('html,body').animate({scrollTop: $(".main").offset().top}, 700);
+	});
+});
 	

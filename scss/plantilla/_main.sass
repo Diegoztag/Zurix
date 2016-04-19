@@ -1,5 +1,5 @@
-$text-main-base:   14px 
-$text-main-movil:  14px
+$text-main-base:   15px 
+$text-main-movil:  18px
 $text-main-tablet:  14px
 $text-main-web: 14px
 
@@ -9,51 +9,133 @@ $title-main-tablet: 14px
 $title-main-web:    14px
 
 h3
-    font-size: 19px
-    font-weight: 600
+    font-size: 24px
+    font-weight: 500
+h4
+    font-size: 17px
 h5
     font-weight: 600
     font-size: 15px
+a
+    color: $lila
+    transition: all 0.2s linear
+    &:hover
+        text-decoration: underline
+ul
+    padding-left: 15px
+img
+    margin: 2em 0em
 
 .main
-    margin: 3em auto
+    margin-bottom: 1em
     p,ul
         font-size: $text-main-base
-        color: #555556
-        font-size: 13px
+        font-weight: 300
+        color: rgba(0,0,0,0.71)
         letter-spacing: 0.5px
         line-height: 1.55
 
 .caract-wrap
     border-bottom: 1px dashed #cacaca
-    border-top: 1px dashed #cacaca
     margin: 2em 0em
+    margin-bottom: 3em
 
 .caracteristicas
-    margin: 1em 0
+    margin: 2em 0
     text-align: center
     h3
-        font-size: 15px
-        font-weight: 700
-        margin: 0
-        line-height: 2
-    &__flat
-        width: 50px
+        font-size: 22px
+        font-weight: 500
+        margin: 0.5em 0
+        line-height: 2.5
+    &__icon
+        font-size: 60px
+        color: $lila
+
+.btn-download
+    color: #fff
+    background-color: #26a69a
+    text-align: center
+    letter-spacing: .5px
+    transition: .2s ease-out
+    cursor: pointer
+    border: none
+    border-radius: 2px
+    display: inline-block
+    height: 36px
+    line-height: 36px
+    outline: 0
+    padding: 0 2rem
+    text-transform: uppercase
+    vertical-align: middle
+    -webkit-tap-highlight-color: transparent
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+    &:hover
+        background: #2bbbad
+        box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.16), 0 5px 10px 0 rgba(0, 0, 0, 0.12)
+    &__download
+        margin-left: 10px
+
+.titulo
+    color: #ba68c8
+
+.ejemplo-grid
+    div
+        background: #26a69a
+        border: 2px solid #fdfdfd
+        text-align: left
+        height: 35px
+        &:last-child
+            margin-bottom: 2em
+    p
+        color: $blanco
+        margin-left: 20px
+
+.ejemplo-grid2
+    display: block
+    div
+        background: #26a69a
+        border: 2px solid #fdfdfd
+        height: 35px
+    p
+        color: $blanco
+        font-size: 18px
+
+.ejemplo-grid3
+    div
+        background: #26a69a
+        border: 2px solid #fdfdfd
+        text-align: left
+        height: 35px
+        &:last-child
+            margin-bottom: 2em
+    p
+        color: $blanco
 
 .ejemplo-cajas
     margin: 20px 0px
-    border: 1px solid #19BD72
+    border: 3px solid purple
+    background: #26a69a
     p
         line-height: 4
         font-size: 12px
+        font-weight: normal
+        color: #fdfdfd
 
 .ejemplo-cajas > .hijo
-    border: 1px solid #36434d
+    border: 1px solid #fdfdfd
 
-code[class*="lang-"], pre[class*="lang-"]
-    font-size: 12px
+.resultado
+    margin: 0
+
+.offsets
+    .hijo
+        height: 100px
+    p
+        text-align: center
 
 .img-breakpoints
     margin: 1em auto
+
 
 

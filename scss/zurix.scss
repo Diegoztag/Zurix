@@ -1,7 +1,7 @@
 // Variables Generales del framework Zurix
 
 //Fuentes o Fonts. Agregue el @import de Google-Fonts o bien su fuente personalizada
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100);
 
 
 // Ancho máximo que puede alcanzar el contenedor principal o papá.
@@ -13,12 +13,14 @@ $padding: 15px;
 // Tamaños, puede modificar,borrar o añadir los nombres y valores por default para 
 // ajustarse a sus puntos de quiebre o medias querys personalizados.
 $breakpoints: (
+  mini   : 270px,
   movil  : 480px,
   tablet : 768px,
   web    : 1024px,
   hd     : 1400px
 );
 
+$mini   : 270px;
 $movil  : 480px;
 $tablet : 768px;
 $web    : 1024px;
@@ -45,17 +47,19 @@ $alto  : portrait;
 // Muestras de colores, modifique para crear su paleta de color personalizada.
   $blanco : #FDFDFD;
   $negro  : #070D12;
+  $lila   : #9c27b0;
+  $lila2  : #e1bee7;
 
 // Estilos básicos.
   $body-background  : $blanco;                   // Color de fondo para el body.
-  $body-font        : 'Open Sans', Arial;   // Tipo de fuente predeterminada.
+  $body-font        : 'Roboto', Arial;   // Tipo de fuente predeterminada.
   $body-color       : #333;                      // Color de texto base.
 
 // Estilo para los títulos
-  $header-font           : 'Open Sans', Arial;  // Tipografía para los títulos (h1,h2,h3...)
+  $header-font           : 'Roboto', Arial;  // Tipografía para los títulos (h1,h2,h3...)
   $header-font-weight    : normal;                  // Espesura de la letra de los títulos.
   $header-text-transform : normal;                   // normal, uppercase, lowercase, capitalize
-  $header-color          : #2d2d2d;                  // Color designado para los títulos.
+  $header-color          : rgba(0,0,0,0.71);                  // Color designado para los títulos.
 
 // Tamaño de títulos
   $h1-font-size : 2em;
@@ -66,7 +70,7 @@ $alto  : portrait;
   $h6-font-size : 0.9em;
 
 // Estilo para los enlaces <a>
-  $link-color : #2d2d2d;        // Color.
+  $link-color : rgba(0,0,0,0.71);        // Color.
 
 // Estilos párrafos
   $p-font-size   : 1em;        // Tamaño.
@@ -74,27 +78,57 @@ $alto  : portrait;
   $p-margin      : 1.5em;      // Margen o separación.
 
 //Estilos básicos.
-
-  code[class*="lang-"], pre[class*="lang-"]{
-    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; 
-    direction: ltr; 
-    text-align: left; 
-    white-space: pre;
+  
+  code, pre {
+    position: relative;
     font-size: 14px;
-    word-spacing: normal;
-    word-break: normal; 
-    word-wrap: normal;
-    color: white;
-    tab-size: 1;
-    border-radius: 3px;
-    line-height: 1.5;
   }
 
-  pre[class*="lang-"] {
-    background: #1E252A;
-    margin: 2.5em 0;
+  code[class*="language-"], pre[class*="language-"] {
+    color: black;
+    /* text-shadow: 0 1px white; */
+    font-family: 'Inconsolata', Monaco, Consolas, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 1;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"] {
+    padding: 25px 12px 7px 12px;
+    border: solid 1px rgba(51,51,51,0.12);
+    padding: 2em 0em 0em 0em;
+    padding-right: 25px;
+    margin: 2em 0;
     overflow: auto;
-    border-radius: 0.3em;
+    &:before{
+      position: absolute;
+      padding: 1px 5px;
+      background: #e8e6e3;
+      top: 0;
+      left: 0;
+      font-family: "Roboto", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      color: #555;
+      content: attr(class);
+      font-size: .9rem;
+      border: solid 1px rgba(51,51,51,0.12);
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  :not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #f5f2f0;
   }
 
   *,
@@ -178,13 +212,13 @@ $alto  : portrait;
 @import "componentes/core";        // Núcleo base de Zurix.
 @import "componentes/mixins";      // Mixins
 @import "componentes/flexbox";     // Flexbox
-@import "componentes/desarrollo";  // Modo desarrollo
+// @import "componentes/desarrollo";  // Modo desarrollo
 @import "componentes/visibilidad"; // Controlar la visibilidad
 @import "componentes/utilidades";  // Utilidades adicionales
 //@import "componentes/video";       // Videos responsive
 //@import "componentes/menu";        // Zurix menu
 @import "componentes/icon-fonts";  // Icon fonts
-//@import "componentes/offset";      // Offset
+@import "componentes/offset";      // Offset
 //@import "componentes/tablas";      // Tablas
 
 @import "plantilla/header";
