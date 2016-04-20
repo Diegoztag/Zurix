@@ -15,7 +15,32 @@
 
 <body>
 	
-	<section id="menu">
+	<div class="wrap">
+		
+		<section id="nav">
+			<div class="papa no-padding">
+				<div class="hijo nav">
+					<div class="nav__logo">
+							<a href="http://diegoztag.github.io/Zurix/">
+								<img class="menu__icon centro" src="img/icon-black.png" alt="logo">	
+							</a>
+					</div>
+					<ul class="nav__ul">
+						<li><a class="nav__a caract">Características</a></li>
+						<li><a class="nav__a acerca">Acerca de Zurix</a></li>
+						<li><a class="nav__a desc">Descarga</a></li>
+						<li><a class="nav__a estruc">Estructura del proyecto</a></li>
+						<li><a class="nav__a grid">Grid</a></li>
+						<li><a class="nav__a desplazamiento">Desplazamientos</a></li>
+						<li><a class="nav__a responsive">Responsive design</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</section>
+
+
+		<section id="menu">
 		<div class="papa no-padding">
 			<div class="hijo menu">
 
@@ -61,7 +86,7 @@
 
 	<section id="main">
 		<div class="papa">
-			<div class="hijo main base-95">
+			<div class="hijo main base-95 center">
 				<div class="papa no-padding caract-wrap">
 					<div class="hijo caracteristicas tablet-50">
 						<span class="caracteristicas__icon icon-cell"></span>
@@ -85,14 +110,14 @@
 					</div>
 				</div>
 
-				<h3 class="titulo">Acerca de zurix</h3>
+				<h3 class="titulo about">Acerca de zurix</h3>
 				<p>Zurix es un framework exclusivamente CSS sin estilos visuales preestablecidos, orientado a maquetación HTML y así brindarnos la facilidad de crear diseños web responsive (RWD) y mobile first fácilmente.</p>
 
 				<p>Desarrolla geniales proyectos para cualquier tamaño de pantalla a gran velocidad, con zurix es alucinante lo fácil que resulta pues es senmántico, legible, flexible y absolutamente personalizable.</p>
 
 				<p>Creado en SASS, destinado para maquetación o estructura pura y en tiempo récord, no añade estilos predeterminados para evitar conflictos con proyectos en desarrollo y así olvidarse de las colisiones de estilos css framework-diseñador, dotado con todo el poder de flexbox!! es hora de olvidar los floats.</p>
 				
-				<h3 class="titulo">Iniciando</h3>
+				<h3 class="titulo descarga">Iniciando</h3>
 				<h4>Aprende como empezar a utilizar e incluir fácilmente zurix a tus proyectos web.</h4>
 
 				<h4><b>Descargar</b></h4>
@@ -101,7 +126,7 @@
 
 				<a href="https://github.com/Diegoztag/Zurix/archive/master.zip" class="btn-download">Zurix <span class="icon-bajar btn-download__download"></span></a>
 
-				<h3 class="titulo">Estructura del proyecto</h3>
+				<h3 class="titulo estructura">Estructura del proyecto</h3>
 
 				<p>Posteriormente a la descarga,extraiga los archivos del <b>.zip</b> en la ruta donde esta localizado su proyecto web.</p>
 
@@ -153,7 +178,7 @@
 
 				<p>Sass es un meta-lenguaje procesado para css, a través de este encontramos una sintaxis y funcionalidades mas poderosas que un css normal no soportaría, nos permite crear código css mucho más mantenible.</p>
 
-				<p>Desafortunadamente, el navegador no tiene la capacidad de interpretar los archivos en formato Sass, por lo que se debe tener un compilador para que procese los <b>archivos.scss</b>, y nos  den como resultado un archivo.css, actualmente existen compiladores gráficos como <a href="https://prepros.io/">Prepros</a>, <a href="http://koala-app.com/">Koala</a> o <a href="http://mhs.github.io/scout-app/">Scout</a> solo por mencionar algunos.</p>
+				<p>Desafortunadamente, el navegador no tiene la capacidad de interpretar los archivos en formato Sass, por lo que se debe tener un compilador para que procese los <b>archivos.scss</b>, y nos  den como resultado un archivo.css, actualmente existen compiladores gráficos como <a class="link-pre" href="https://prepros.io/">Prepros</a>, <a class="link-pre" href="http://koala-app.com/">Koala</a> o <a class="link-pre" href="http://mhs.github.io/scout-app/">Scout</a> solo por mencionar algunos.</p>
 
 				<p>En lugar de hacer uso directo de la carpeta css, esta vez su enfoque quedara centrado en la carpeta llamada scss que contiene dentro una carpeta llamada <b>"componentes"</b> que contiene los módulos del framework y un archivo <b>"zurix.scss"</b>, este archivo es el principal, pues es la unión de los demás archivos módulos que se encuentran en la carpeta <b>"componentes"</b> realizado con @import y tiene algunas variables generales que puedes configurar para adaptar mejor el framework a su exigencia. Al procesar <b>zurix.scss</b> el resultado sera un archivo .css que podra leer e interpretar fácilmente el navegador, este se puede incluir como cualquier otro archivo css al proyecto.</p>
 
@@ -175,15 +200,28 @@
 	</code>
 </pre>
 
-				<h3 class="titulo">Grid o sistema de rejillas</h3>
+				<h3 class="titulo rejilla">Grid o sistema de rejillas</h3>
 
-				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas <b>("papa")</b> e hijos <b>("hijo")</b> para tener una mejor comprensión y organización de contenedores, aquí se aconseja utilizar la etiqueta <b>div</b> para generar los contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
+				<p>Una familia es un gran ejemplo para aprender y es la base de todo, en Zurix se manejan los contenedores con el nombre de papas <b>("papa")</b> e hijos <b>("hijo")</b> para tener una mejor comprensión y organización de contenedores, veras que es muy fácil memorizar las clases de este framework y rápidamente estarás haciendo estructuras HTML con estilo y a la velocidad de la luz.</p>
 
 				<h4><b>Contenedores</b></h4>
 
 				<p>Los padres en la familia son los eslabones primordiales de la casa y en zurix fungen de una manera similar, los grupos con la clase <b>"papa"</b> son los contenedores que albergan los divs <b>"hijos"</b> para su organización y función. <i>"Los hijos deben estar siempre dentro del contenedor papa."</i></p>
 
-				<p>Los contenedores <b>"papa"</b> son los estelares del framework zurix y contienen las siguientes propiedades:</p>
+				<p>Los contenedores <b>"papa"</b> son los estelares del framework zurix se debe utilizar etiquetas <b>div</b> para generarlos al igual que los contenedores hijos <b>"hijo"</b>.</p>
+
+<pre class="language-markup">
+	<code class="language-">
+		<span class="comentario"><</span><span class="tag">body</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/body</span><span class="comentario">></span>
+	</code>
+</pre>
+
+				<p>Los contenedores papa tienen declarados los siguientes valores css.</p>
 
 <pre class="language-css">
 	<code class="lang-">
@@ -203,11 +241,11 @@
 				<p>Hay varios puntos que se tienen que dejar en claro en cuanto al uso de contenedores papas e hijos en zurix:</p>
 
 				<ul class="">
-					<li class="icon-triangulo-derecha">Los papas son los contenedores principales y los hijos son divisiones del contenedor papa.</li>
+					<li class="icon-triangulo-derecha">Los papas son los contenedores <b>principales</b> y los hijos son <b>divisiones</b> del contenedor papa.</li>
 
 					<li class="icon-triangulo-derecha">Todo contenedor papa debe tener al menos un hijo y los hijos deben estar dentro de un papa.</li>
 
-					<li class="icon-triangulo-derecha">Los contenedores hijos llevan la clase .hijo y ademas otra clase que describa su anchura con la clase <b>"tamaño-x"</b> o si es una fracción <b>"tamaño-x-y"</b>.</li>
+					<li class="icon-triangulo-derecha">Los contenedores hijos llevan la clase <b>"hijo"</b> y ademas otra clase que describa su tamaño de breakpoint y anchura con la clase <b>"tamaño-x"</b> o si es una fracción <b>"tamaño-x-y"</b>.</li>
 				</ul>
 
 				<h4><b>Porcentajes!!</b></h4>
@@ -264,7 +302,7 @@
 				
 				<h4><b>Fracciones!!</b></h4>
 
-				<p>Este framework a parte de los porcentajes, también te ofrece la capacidad de manejar anchos en elementos del html con clases fracciones, determinado por la función de la clase <b>"tamaño-x-y"</b> donde <b>x-y</b> es la fracción (1/4, 3/6, etc).</p>
+				<p>Este framework a parte de los porcentajes, también te ofrece la capacidad de manejar anchos en elementos del html con clases fracciones, determinado por la función de la clase <b>"mini-1-3"</b> donde <b>mini</b> es el tamaño de la media querie y <b>1-3</b> es la fracción que determina el ancho del objeto (1/4, 3/6, etc).</p>
 
 				<p>Actualmente el framework tiene como base 3 tipos de fracciones con las que puedes interactuar, y esos son: <b>tercios, sextos y octavos</b> declarados en un map en su versión sass, si usted usa la versión sass en el archivo principal <b>"zurix.scss"</b> puede añadir soporte para más fracciones de acuerdo a su necesidad solo es cuestión de modificar los valores.</p>
 
@@ -278,7 +316,7 @@
 	</code>
 </pre>
 
-				<p>Este recurso es complemento del grid de porcentaje, ya que si te preguntas como puedes hacer una columna con 3 contenedores o con 6 con el sistema de grid de porcentaje, no se podría por que necesitarían porcentajes con punto flotante en su anchura, y el grid de porciento solo utiliza intervalos de 5% en 5% hasta el 100, entonces necesitamos definir 33.3% para para cada div en un grupo de 3 contenedores y 16.6% para cada div con 6 contenedores y así sucesivamente.</p>
+				<p>Este recurso es complemento del grid de porcentaje, ya que si te habras dado cuenta con el sistema de porcentaje con intervalos de 5 en 5% no podrias determinar una cuadricula con 3 contenedores hijo que ocuparan el 100% por que necesitarias dar a cada uno 33.3% de ancho y asi en varias situaciones muy puntuales, por eso en zurix las fracciones llegan al rescate.
 
 				<p>Resolver este problema es fácil utilizando el recurso de anchura con fracciones.</p>
 
@@ -312,39 +350,7 @@
 	</code>
 </pre>
 
-				<p>Veamos unos ejemplos para dejar por sentado este tema, queremos 3 contenedores <b>"hijo"</b> que individualmente tengan 1/3 del ancho total del contenedor padre.</p>
-				
-				<div class="papa ejemplo-grid3">
-					<div class="hijo base-1-3 centrar-texto medio centrar">
-						<p>1/3</p>
-					</div>
-					<div class="hijo base-1-3 centrar-texto medio centrar">
-						<p>1/3</p>
-					</div>
-					<div class="hijo base-1-3 centrar-texto medio centrar">
-						<p>1/3</p>
-					</div>
-				</div>
-
-<pre class="language-markup">
-	<code class="language-">
-			<span class="comentario"><</span><span class="tag">div </span><span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
-				<span class="comentario"><</span><span class="tag">div </span><span class="attr">class=</span><span class="valor">"hijo mini-1-3"</span><span class="comentario">></span> <span class="comentario"><---Nota la forma en que se declaran los anchos con fracciones mediante las clases.</span>
-						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">1/3</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
-				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
-
-				<span class="comentario"><</span><span class="tag">div </span><span class="attr">class=</span><span class="valor">"hijo mini-1-6"</span><span class="comentario">></span>
-						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">1/6</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
-				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
-
-				<span class="comentario"><</span><span class="tag">div </span><span class="attr">class=</span><span class="valor">"hijo mini-1-8"</span><span class="comentario">></span>
-						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">1/8</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
-				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
-		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
-	</code>
-</pre>
-
-				<p>Ahora en este ejemplo, queremos que el contenedor padre tenga 1 hijo de 1/6, uno de 3/6  y otro de 2/6.</p>
+				<p>Veamos un ejemplo para dejar por sentado este tema,declaramos un contenedor <b>"papa"</b> y dentro queremos 3 contenedores <b>"hijo"</b> que individualmente tengan 1/6 del ancho total del contenedor padre el segundo 3/6 y el ultimo 2/6.</p>
 
 					<div class="papa ejemplo-grid3">
 						<div class="hijo base-1-6 centrar-texto medio centrar">
@@ -376,11 +382,11 @@
 	</code>
 </pre>
 
-				<p>Como observaste en el ejemplo anterior puedes jugar con las anchuras en las fracciones y adaptarlas a tus necesidades rápidamente, pero recuerda que solo usando <b>tercios, sextos y octavos</b> si usas el framework en su versión css.</p>
+				<p>Como observaste en el ejemplo anterior puedes jugar con las anchuras en las fracciones y adaptarlas a tus necesidades rápidamente, pero recuerda que solo usando <b>tercios, sextos y octavos</b> solo si usas el framework en su versión css, si por el contrario optas por Sass tienes mas libertar de editar los parametros.</p>
 				
 				<h4><b>Ahora creemos nuestro primer layout!</b></h4>
 
-				<p>Como practica y parte de la demostración crearemos un layout combinando el grid de porcentaje y combinándolo con fracciones para generar rápidamente una estructura html.</p>
+				<p>Como practica y parte de la demostración crearemos un layout usando el grid de porcentaje y combinándolo con fracciones para generar rápidamente una estructura html.</p>
 
 				<p>Hagamos un contenedor padre <b>papa</b> que en su interior contenga en su primera fila dos <b>hijos</b> que tengan de ancho el <b>50%</b>, en la segunda fila un <b>hijo único</b> que tome el <b>100%</b>, en su tercera fila 3 contenedores <b>hijos</b> que tengan <b>1/3</b>	de ancho cada uno y por ultimo otro <b>hijo unico</b> con <b>100%</b>.</p>
 				
@@ -430,11 +436,11 @@
 					<div class="hijo full"><p>No yo soy mayor!! >:s</p></div>
 				</div>
 
-				<p>Como ya vimos, con zurix es fácil asignar y controlar el manejo de los anchos de elementos del HTML pero esto no solo se limita a los contenedores <b>papa</b> o <b>hijo</b>, también puedes asignarles anchuras mediante clases a elementos puntuales del html como por ejemplo párrafos, imágenes, vídeos, contenedores, menús, todo lo que se te ocurra, esto hace a zurix una herramienta extremadamente fácil de utilizar para controlar rápidamente el width o anchura de objetos en tu proyecto.</p>
+				<p>Como ya vimos, con zurix es fácil asignar y controlar el manejo de los anchos de elementos del HTML pero esto no solo se limita a los contenedores <b>papa</b> o <b>hijo</b>, también puedes asignarles anchuras mediante clases a elementos puntuales del html como por ejemplo párrafos, imágenes, vídeos, divs, menús, todo lo que se te ocurra, esto hace a zurix una herramienta extremadamente fácil de utilizar para controlar rápidamente el width o anchura de objetos en tu proyecto.</p>
 
 				<p>Veamos unos ejemplos:</p>
 
-				<p>En este ejemplo queremos que una imagen tenga un ancho del 50% de su contenedor padre.</p>
+				<p>En este caso tomemos de ejemplo una imagen que queremos asignarle un ancho del 50% de su contenedor padre.<i>"Recuerda que puedes hacer esto con cualquier objeto del html"</i>.</p>
 
 <pre class="language-markup">
 	<code class="lang-">
@@ -442,39 +448,49 @@
 	</code>
 </pre>
 
-			<p class="resultado"><b>Resultado:</b></p>
-
-			<img class="base-50" src="http://lorempixel.com/200/100/" alt="ejemplo">
-
-			<p>Ahora hagamos lo mismo con un párrafo pero que tenga 1/3 de ancho</p>
-
-<pre class="language-markup">
-	<code class="lang-">
-		<span class="comentario"><</span><span class="tag">p </span><span class="attr">class=</span><span class="valor">"mini-1-3"</span> <span class="attr">src=</span> <span class="valor">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="comentario"><</span><span class="tag">/p</span></span><span class="comentario">></span>
-	</code>
-</pre>
-			
 			<p><b>Resultado:</b></p>
 
-			<p class="base-1-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<img class="imagen base-50" src="img/img-muestra.jpg" alt="ejemplo">
 
-				<h3 class="titulo">Desplazamientos</h3>
+				<h3 class="titulo desplaza">Desplazamientos</h3>
 
-				<p>Zurix nos brinda la posibilidad de desplazar contenedores u objetos html con la funcion <b>Offset</b> solamente basta con añadir la clase <b>"mini-offset-40"</b> en lo que mini significa el prefijo del tamaño de pantalla (mini,movil,tablet,web,hd) y el numero después de offset significa el porcentaje de la distancia que se va a desplazar</p>
+				<p>Zurix nos brinda la posibilidad de desplazar contenedores con la funcion <b>Offset</b> solamente basta con añadir la clase <b>"mini-offset-40"</b> en lo que mini significa el prefijo del tamaño de pantalla (mini,movil,tablet,web,hd) y el numero después de offset significa el porcentaje de la distancia que se va a desplazar, también puedes hacer uso de <b>offset</b> asignando fracciones en lugar de porcentajes.</p>
+
+				<p>La funcion <b>offset</b> solo funciona con contenedores con la clase <b>"hijo"</b>.</p>
 
 				<div class="papa ejemplo-grid3 no-padding offsets">
 					<div class="hijo base-full centrar-texto medio centrar">
 						<p>Este div tiene 100%</p>
 					</div>
 					<div class="hijo base-50 centrar-texto medio centrar mini-offset-50">
-						<p>50% (Desplazado 50%)</p>
+						<p>50% <br> (Desplazado 50%)</p>
+					</div>
+					<div class="hijo base-50 centrar-texto medio centrar mini-offset-1-3">
+						<p>50% <br> (Desplazado 1/3)</p>
 					</div>
 				</div>
 
-	
-				<h3 class="titulo">Media queries</h3>
+<pre class="language-markup">
+	<code class="language-">
+		<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-full"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span> <span class="string">Este div tiene 100%</span> <span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
 
-				<p>Entrando en materia cuando hablamos de media queries, breakpoints o puntos de quiebre nos referimos a el punto en el que el tamaño del viewport o pantalla presenta cambios para adaptarse al tipo de resolución o dimensión del viewport y así evitar que las partes del diseño no se rompan y se genere un caos total.</p>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-50 mini-offset-50"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span> <span class="string">50% (Desplazado 50%)</span> <span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-50 mini-offset-1-3"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span> <span class="string">50% (Desplazado 1/3)</span> <span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+				<h3 class="titulo respon">Creando diseños responsivos</h3>
+
+				<p>Entrando en materia cuando hablamos de un diseño responsivo siempre viene al tema las media queries, breakpoints o puntos de quiebre nos referimos a el punto en el que el tamaño del viewport o pantalla presenta cambios para adaptarse al tipo de resolución o dimensión del viewport y así evitar que las partes del diseño no se rompan y se genere un caos total.</p>
 
 				<p>Para que tu desarollo o proyecto web identifique los cambios de los media queries es necesario declarar una etiqueta <b>meta</b> llamada <b>"viewport"</b>. La etiqueta viewport nos permite a los que construimos sitios web o web apps, definir el ancho, alto y escala del área usada por el navegador para mostrar contenido. A continuación la configuración más común de una etiqueta meta.</p>
 
@@ -486,73 +502,190 @@
 	</code>
 </pre>
 				
-				<p>Zurix es un framework orientado al responsive design (RWD) y esto significa que a través de el, puedes manipular mediaqueries para el beneficio de tu proyecto y hacer que se vea bien en prácticamente todas las resoluciones de pantallas.</p>
+				<p>Zurix es un framework orientado al responsive design (RWD) y esto significa que a través de el, puedes manipular mediaqueries para el beneficio de tu proyecto y hacer que se vea bien en prácticamente todo los tipos de pantallas.</p>
 				
-				<img class="img-breakpoints center tablet-30" src="img/breakpoints.jpg" alt="">
+				<img class="img-breakpoints center base-60 tablet-30" src="img/breakpoints.jpg" alt="">
 
 				<p>Zurix presenta por default varios breakpoints o tamaños de media queries que podemos usar por default:</p>
+
 				<ul>
-					<li class="icon-triangulo-derecha"><b>Mini</b>: 320px en adelante.</li>
-					<li class="icon-triangulo-derecha"><b>Movil</b>: 480px en adelante.</li>
-					<li class="icon-triangulo-derecha"><b>Tablet</b>: 768px en adelante.</li>
-					<li class="icon-triangulo-derecha"><b>Web</b>: 1024px en adelante.</li>
-					<li class="icon-triangulo-derecha"><b>Hd</b>: 1500px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>mini</b>: 320px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>movil</b>: 480px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>tablet</b>: 768px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>web</b>: 1024px en adelante.</li>
+					<li class="icon-triangulo-derecha"><b>hd</b>: 1500px en adelante.</li>
 				</ul>
-
-				<p>Hay que recordar que zurix es un framework orientado a <b>mobile first</b> entonces los estilos que se determinen para un tamaño se <b>heredan</b> para los tamaños o breakpoints sucesores.</p>
-
-				<p>En la versión Sass de zurix en el archivo base nombrado <b>"zurix.scss"</b> se pueden editar los tamaños de medias queries que se ofrecen por default declarados en un map, estos definen los tamaños de los contenedores a través de clases, es por eso que se recomienda utilizar zurix en su versión sass si desea tener mayor personalización de framework.</p>
 				
-<pre class="language-sass">
-	<code class="lang-">
-		<span class="tag">$breakpoints:(</span>
-				<span class="attr">movil</span><span>: </span>		<span class="valor">480px,</span>
-				<span class="attr">tablet</span><span>:</span>			<span class="valor">768px,</span>
-				<span class="attr">web</span><span>:   </span>			<span class="valor">1024px,</span>
-				<span class="attr">hd</span><span>:    </span>		<span class="valor">1400px</span>
-		<span class="tag">)</span>
-	</code>
-</pre>
+				<p>En los ejemplos anteriores, solo definimos el tamaño de las pequeñas pantallas con <b>"mini"</b>, esto esta bien si solamente queremos un diseño estático ya que las reglas se heredan hacia las medidas mayores. Con solo declarar <b>"mini-50"</b> por ejemplo, estamos diciendo o declarando indirectamente <b>"mini-50 movil-50 tablet-50 web-50 hd-50"</b>. Pero definiendo explícitamente el tamaño podemos hacer que nuestro diseño se haga sensible a los cambios.</p>
 
-				<p>En los ejemplos anteriores utilizábamos la clase <b>mini-</b> seguido del numero del x% que queríamos asignar pero nunca se preguntaron que significaba esa clase?? bueno esta clase que declarábamos antes del numero significa para que tamaño de pantalla quiero que se mantengan los anchos que estoy asignando,en este caso mini- es la clase base y su función es hasta los 479px de ancho, pero por que aun pasando los 479px seguía funcionando?? es fácil recuerden que sus estilos son heredados si no se le asigna otra medida posterior su configuración quedara intacta en los demás estilos de pantalla.</p>
+				<p>Veamos unos ejemplos a continuación de como se puede hacer uso de las medidas para volver responsive tu proyecto.</p>
 
-				<p>Actualmente en zurix existen 5 tamaños de media queries que explicamos en el tema anterior <b>(mini, movil, tablet, web, hd)</b> estas son clases y nos ayudan a crear compatibilidad para cualquier dispositivo móvil y volver nuestro proyecto responsivo (RDW).</p>
-
-				<p>Gracias a ellas nosotros podemos poner condicionales en nuestro diseño para hacer que los estilos de nuestro proyecto no se desacomoden al redimencionar el navegador o al verlo en un dispositivo móvil de diferente resolución.</p>
-
-				<p>Veamos unos ejemplos a continuación de como se puede hacer uso de las media queries.</p>
-
-				<p>Si queremos un imagen que tenga un 100% del ancho del navegador en su tamaño web "1024px en adelante" entonces añadiremos a la etiqueta "img" la siguiente clase:</p>
+				<div class="papa ejemplo-grid4">
+					<div class="hijo base-100 medio centrar">
+						<p>Siempre estoy de ancho completo (mini-100)</p>
+					</div>
+					<div class="hijo base-100 movil-100 tablet-50 medio centrar">
+						<p>Soy de ancho completo en móviles (movil-50)</p>
+					</div>
+				</div>
 
 <pre class="language-markup">
-	<code class="lang-">
-		<span class="comentario"><</span><span class="tag">img </span><span class="attr">class=</span><span class="valor">"web-50"</span> <span class="attr">src=</span> <span class="valor">"http://lorempixel.com/100/100/"</span><span class="comentario">></span>
+	<code class="language-">
+		<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span> <span class="string">Siempre estoy de ancho completo (mini-100)</span> <span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 movil-100 tablet-50"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span> <span class="string">Soy de ancho completo en móviles (movil-50)</span> <span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
 	</code>
-</pre>
+</pre>	
 
-				<p>Muy bien!! cuando el viewport sobrepasa los 1024px se activa nuestra clase y se adapta el ancho del elemento, pero que pasa cuando la ventana es menor de 1024px??, simple, la clase con el ancho que declaramos ya no tiene efecto y el ancho de la imagen se devuelve a su estado original por que la ventana ya no es de tamaño <b>"web"</b>, si no que se redujo a tamaño <b>"tableta"</b>o menor.</p>
-
-				<p>Hagamos otro ejemplo pero esta vez con varias clases de medidas de pantalla para dejar bien claro esto que mencione, veamos en esta ocasión quiero la misma imagen, pero quiero que en su ancho para móviles tenga un 50%, cuando salte al tamaño para tableta tenga digamos un 80% y al pasar al tamaño web tenga 1/3 de su anchura total y cuando salte a tamaño hd tenga un 100% de anchura, entonces la etiqueta quedaría declarada con estas clases:</p>
-
-<pre class="language-markup">
-	<code class="lang-">
-		<span class="comentario"><</span><span class="tag">img</span> <span class="attr">class=</span><span class="valor">"movil-50 tablet-80 web-1-3 hd-full"</span> <span class="attr">src=</span> <span class="valor">"http://lorempixel.com/100/100/"</span><span class="comentario">></span>
-	</code>
-</pre>
-
-				<p>Para declarar que un elemento del html abarque todo el 100% del viewport y heredado a todos los tamaños de breakpoint simplemente se añade la clase "total o full".</p>
-
-<pre class="language-markup">
-	<code class="lang-">
-		<span class="comentario"><</span><span class="tag">img</span> <span class="attr">class=</span><span class="valor">"total"</span> <span class="attr">src=</span><span class="valor">"http://lorempixel.com/100/100/"</span><span class="comentario">></span>
-	</code>
-</pre>
-
-				<p>A que te recuerda esto?? si alguna vez usaste <b>boostraps</b> o <b>foundation</b> utilizabas las medidas para indicar hasta donde se mantendrían los anchos de las clases mediante columnas, por ejemplo bootstraps utiliza las medidas de sus clases (xs,sm,md,ls,xl) y seguido por el numero de columnas, si te pones a pensar es realmente casi lo mismo en zurix solo que aquí se declaran (base,movil,tablet,web,hd) y en vez de columnas definimos porcentajes o fracciones.</p>
-
-				<p>Hay que puntualizar una cosa, he de recordar que las medidas que mencionamos antes (base,móvil,etc) son las predefinidas por default y son las medidas mas utilizadas en cuanto a la dimensión de pantallas como por ejemplo en celulares, en tablets, pantallas de computadoras o laptops, pero si utilizas Sass puedes fácilmente modificar o crear mas breakpoints personalizados e incluir sus medidas a esta función.</p>
+				<p>Hagamos otro ejemplo pero esta vez realicemos un layout básico responsivo. Intente cambiar el tamaño de su navegador para que aprecie el reacomodo del diseño continuación.</p>
 
 				
+				<div class="papa layout-base">
+					<div class="hijo purple base-100"></div>
+					<div class="hijo gray base-100 movil-100 tablet-20">
+						<p></p>
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+					<div class="hijo green base-100 movil-100 tablet-80">
+						<p></p>
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+
+
+<pre class="language-markup">
+	<code class="language-">
+		<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100"</span><span class="comentario">></span>
+
+						<span class="comentario">//Contenedor purpura, Aquí va el header titulo,logo,etc.</span>
+
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 movil-100 tablet-20"</span><span class="comentario">></span>
+
+						<span class="comentario">//Contenedor gris, Aquí va el panel de navegación.</span>
+
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 movil-100 tablet-80"</span><span class="comentario">></span>
+
+						<span class="comentario">//Contenedor verde, Aquí va el contenido principal.</span>
+
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+				
+				<p>Otro ejemplo de cuadricula o layout responsiva,recuerde redimencionar el navegador para apreciar los cambios.</p>
+
+
+				<div class="papa ejemplo-grid5">
+					<div class="hijo row0 base-100 medio centrar">
+						<p>mini-100</p>
+					</div>
+
+					<div class="hijo row1 base-100 tablet-1-3 web-20 medio centrar">
+						<p>mini-100 tablet-1-3 web-20</p>
+					</div>
+					<div class="hijo row1 base-100 tablet-1-3 web-60 medio centrar">
+						<p>mini-100 tablet-1-3 web-60</p>
+					</div>
+					<div class="hijo row1 base-100 tablet-1-3 web-20 medio centrar">
+						<p>mini-100 tablet-1-3 web-20</p>
+					</div>
+
+					<div class="hijo row2 base-100 tablet-50 web-25 medio centrar">
+						<p>mini-100 tablet-50 web-25</p>
+					</div>
+					<div class="hijo row2 base-100 tablet-50 web-25 medio centrar">
+						<p>mini-100 tablet-50 web-25</p>
+					</div>
+					<div class="hijo row2 base-100 tablet-50 web-25 medio centrar">
+						<p>mini-100 tablet-50 web-25</p>
+					</div>
+					<div class="hijo row2 base-100 tablet-50 web-25 medio centrar">
+						<p>mini-100 tablet-50 web-25</p>
+					</div>
+
+					<div class="hijo row3 base-3-3 tablet-1-6 web-1-3 medio centrar">
+						<p>mini-3-3 tablet-1-6 web-1-3</p>
+					</div>
+					<div class="hijo row3 base-3-3 tablet-4-6 web-1-3 medio centrar">
+						<p>mini-3-3 tablet-4-6 web-1-3</p>
+					</div>
+					<div class="hijo row3 base-3-3 tablet-1-6 web-1-3 medio centrar">
+						<p>mini-3-3 tablet-1-6 web-1-3</p>
+					</div>
+
+				</div>
+
+
+<pre class="language-markup">
+	<code class="language-">
+		<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor purpura</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-1-3 web-20"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-1-3 web-20</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor azul</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-1-3 web-20"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-1-3 web-20</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor azul</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-1-3 web-20"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-1-3 web-20</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor azul</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-50 web-25"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-50 web-25</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor verde</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-50 web-25"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-50 web-25</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor verde</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-50 web-25"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-50 web-25</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor verde</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-100 tablet-50 web-25"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-100 tablet-50 web-25</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor verde</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-3-3 tablet-4-6 web-1-3"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-3-3 tablet-4-6 web-1-3</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor rosa</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-3-3 tablet-4-6 web-1-3"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-3-3 tablet-4-6 web-1-3</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor rosa</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo mini-3-3 tablet-4-6 web-1-3"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span><span class="string">mini-3-3 tablet-4-6 web-1-3</span><span class="comentario"><</span><span class="tag">/p</span><span class="comentario">></span>
+						<span class="comentario">//Contenedor rosa</span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
 
 
 
@@ -562,9 +695,14 @@
 
 
 
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+
+
+
+	</div>
+	
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>

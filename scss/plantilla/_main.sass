@@ -1,7 +1,7 @@
 $text-main-base:   15px 
 $text-main-movil:  18px
 $text-main-tablet:  14px
-$text-main-web: 14px
+$text-main-web:     14px
 
 $title-main-base:   14px
 $title-main-movil:  14px
@@ -19,8 +19,6 @@ h5
 a
     color: $lila
     transition: all 0.2s linear
-    &:hover
-        text-decoration: underline
 ul
     padding-left: 15px
 img
@@ -34,6 +32,38 @@ img
         color: rgba(0,0,0,0.71)
         letter-spacing: 0.5px
         line-height: 1.55
+
+.nav
+    width: 220px
+    position: fixed
+    background: $blanco
+    z-index: 30
+    top: 0
+    bottom: 0
+    left: -220px
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+    &__logo
+        transition: all 0.2s linear
+        &:hover
+            opacity: 0.7
+    &__ul
+        padding: 0
+    &__a
+        font-size: 13px
+        height: 44px
+        line-height: 44px
+        display: block
+        padding: 0 30px
+        color: #444
+        font-weight: bold
+        cursor: pointer
+        transition: all 0.1s linear
+        &:hover
+            background: rgba(#2d2d2d,0.1)
+        &:active
+            background: #26a69a
+            color: white
+            transition: width 1s, background 1s
 
 .caract-wrap
     border-bottom: 1px dashed #cacaca
@@ -76,13 +106,17 @@ img
     &__download
         margin-left: 10px
 
+.link-pre
+    &:hover
+        text-decoration: underline
+
 .titulo
     color: #ba68c8
 
 .ejemplo-grid
     div
         background: #26a69a
-        border: 2px solid #fdfdfd
+        border: 2px solid #FDFDFD
         text-align: left
         height: 35px
         &:last-child
@@ -95,7 +129,7 @@ img
     display: block
     div
         background: #26a69a
-        border: 2px solid #fdfdfd
+        border: 2px solid #FDFDFD
         height: 35px
     p
         color: $blanco
@@ -104,13 +138,37 @@ img
 .ejemplo-grid3
     div
         background: #26a69a
-        border: 2px solid #fdfdfd
+        border: 2px solid #FDFDFD
         text-align: left
         height: 35px
+    p
+        color: $blanco
+
+.ejemplo-grid4
+    div
+        background: #26a69a
+        border: 2px solid #FDFDFD
         &:last-child
             margin-bottom: 2em
     p
         color: $blanco
+        font-size: 15px
+        margin: 1em 0
+
+.ejemplo-grid5
+    div
+        border: 2px solid #FDFDFD
+    p
+        color: $blanco
+        margin: 1em 0
+    .row0
+        background: #ba68c8
+    .row1
+        background: #42A5F5
+    .row2
+        background: #26a69a
+    .row3
+        background: #ce93d8
 
 .ejemplo-cajas
     margin: 20px 0px
@@ -125,17 +183,48 @@ img
 .ejemplo-cajas > .hijo
     border: 1px solid #fdfdfd
 
-.resultado
-    margin: 0
+.imagen
+    margin-top: 0
 
 .offsets
     .hijo
-        height: 100px
+        padding: 2.5em
     p
         text-align: center
 
 .img-breakpoints
     margin: 1em auto
+
+.layout-base
+    margin: 2em 0em
+    color: $blanco
+    p
+        height: 25px
+        width: 80%
+        background-color: rgba(0,0,0,0.15)
+        display: block
+        margin: 27px auto
+    .purple
+        background: #ab47bc
+        height: 70px
+    .gray
+        background: #90a4ae
+        height: 300px
+    .green
+        background: #26a69a
+        height: 300px
+
+@include desde (web)
+    .wrap
+        margin-left: 250px
+        position: relative
+    .nav
+        width: 250px
+        left: 0
+        
+    
+
+                    
 
 
 

@@ -4030,6 +4030,7 @@ class="no-padding" el hijo le da padding cero solo a este.
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 .menu {
@@ -4047,9 +4048,13 @@ class="no-padding" el hijo le da padding cero solo a este.
 }
 .menu__logo {
   margin-left: 25px;
+  transition: all 0.2s linear;
+}
+.menu__logo:hover {
+  opacity: 0.7;
 }
 .menu__icon {
-  width: 25px;
+  width: 35px;
 }
 .menu__abrir {
   background: transparent;
@@ -4059,12 +4064,16 @@ class="no-padding" el hijo le da padding cero solo a este.
 }
 .menu__btn {
   margin-top: 4px;
-  height: 19px;
-  width: 21px;
+  height: 25px;
+  width: 28px;
+  transition: all 0.2s linear;
+}
+.menu__btn:hover {
+  opacity: 0.7;
 }
 .menu__linea {
   height: 2px;
-  width: 23px;
+  width: 30px;
   background: #FDFDFD;
 }
 .menu__ul {
@@ -4094,7 +4103,7 @@ class="no-padding" el hijo le da padding cero solo a este.
 .banner {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 .banner__title {
   color: #FDFDFD;
@@ -4129,6 +4138,44 @@ class="no-padding" el hijo le da padding cero solo a este.
   color: #FDFDFD;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__fix {
+    top: 45px;
+  }
+  .menu__logo {
+    margin-left: 70px;
+  }
+  .menu__icon {
+    width: 40px;
+  }
+  .menu__abrir {
+    margin-right: 80px;
+  }
+  .menu__btn {
+    height: 25px;
+    width: 29px;
+  }
+  .menu__linea {
+    height: 2px;
+    width: 41px;
+  }
+
+  .banner__title {
+    font-size: 55px;
+  }
+  .banner__subtitle {
+    font-size: 28px;
+    max-width: 545px;
+  }
+  .banner__abajo {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__fix {
+    display: none;
+  }
+}
 h3 {
   font-size: 24px;
   font-weight: 500;
@@ -4146,9 +4193,6 @@ h5 {
 a {
   color: #9c27b0;
   transition: all 0.2s linear;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 ul {
@@ -4168,6 +4212,45 @@ img {
   color: rgba(0, 0, 0, 0.71);
   letter-spacing: 0.5px;
   line-height: 1.55;
+}
+
+.nav {
+  width: 220px;
+  position: fixed;
+  background: #FDFDFD;
+  z-index: 30;
+  top: 0;
+  bottom: 0;
+  left: -220px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.nav__logo {
+  transition: all 0.2s linear;
+}
+.nav__logo:hover {
+  opacity: 0.7;
+}
+.nav__ul {
+  padding: 0;
+}
+.nav__a {
+  font-size: 13px;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  padding: 0 30px;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.nav__a:hover {
+  background: rgba(45, 45, 45, 0.1);
+}
+.nav__a:active {
+  background: #26a69a;
+  color: white;
+  transition: width 1s, background 1s;
 }
 
 .caract-wrap {
@@ -4218,13 +4301,17 @@ img {
   margin-left: 10px;
 }
 
+.link-pre:hover {
+  text-decoration: underline;
+}
+
 .titulo {
   color: #ba68c8;
 }
 
 .ejemplo-grid div {
   background: #26a69a;
-  border: 2px solid #fdfdfd;
+  border: 2px solid #FDFDFD;
   text-align: left;
   height: 35px;
 }
@@ -4241,7 +4328,7 @@ img {
 }
 .ejemplo-grid2 div {
   background: #26a69a;
-  border: 2px solid #fdfdfd;
+  border: 2px solid #FDFDFD;
   height: 35px;
 }
 .ejemplo-grid2 p {
@@ -4251,15 +4338,45 @@ img {
 
 .ejemplo-grid3 div {
   background: #26a69a;
-  border: 2px solid #fdfdfd;
+  border: 2px solid #FDFDFD;
   text-align: left;
   height: 35px;
 }
-.ejemplo-grid3 div:last-child {
-  margin-bottom: 2em;
-}
 .ejemplo-grid3 p {
   color: #FDFDFD;
+}
+
+.ejemplo-grid4 div {
+  background: #26a69a;
+  border: 2px solid #FDFDFD;
+}
+.ejemplo-grid4 div:last-child {
+  margin-bottom: 2em;
+}
+.ejemplo-grid4 p {
+  color: #FDFDFD;
+  font-size: 15px;
+  margin: 1em 0;
+}
+
+.ejemplo-grid5 div {
+  border: 2px solid #FDFDFD;
+}
+.ejemplo-grid5 p {
+  color: #FDFDFD;
+  margin: 1em 0;
+}
+.ejemplo-grid5 .row0 {
+  background: #ba68c8;
+}
+.ejemplo-grid5 .row1 {
+  background: #42A5F5;
+}
+.ejemplo-grid5 .row2 {
+  background: #26a69a;
+}
+.ejemplo-grid5 .row3 {
+  background: #ce93d8;
 }
 
 .ejemplo-cajas {
@@ -4278,12 +4395,12 @@ img {
   border: 1px solid #fdfdfd;
 }
 
-.resultado {
-  margin: 0;
+.imagen {
+  margin-top: 0;
 }
 
 .offsets .hijo {
-  height: 100px;
+  padding: 2.5em;
 }
 .offsets p {
   text-align: center;
@@ -4291,4 +4408,40 @@ img {
 
 .img-breakpoints {
   margin: 1em auto;
+}
+
+.layout-base {
+  margin: 2em 0em;
+  color: #FDFDFD;
+}
+.layout-base p {
+  height: 25px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 27px auto;
+}
+.layout-base .purple {
+  background: #ab47bc;
+  height: 70px;
+}
+.layout-base .gray {
+  background: #90a4ae;
+  height: 300px;
+}
+.layout-base .green {
+  background: #26a69a;
+  height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    margin-left: 250px;
+    position: relative;
+  }
+
+  .nav {
+    width: 250px;
+    left: 0;
+  }
 }

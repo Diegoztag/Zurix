@@ -9,6 +9,7 @@
     background-position: center
     background-attachment: fixed
     background-size: cover
+    position: relative
 
 .menu
     color: $blanco
@@ -23,8 +24,11 @@
         z-index: 20
     &__logo
         margin-left: 25px
+        transition: all 0.2s linear
+        &:hover
+            opacity: 0.7
     &__icon
-        width: 25px
+        width: 35px
     &__abrir
         background: transparent
         padding: 3px 6px
@@ -32,11 +36,14 @@
         border-radius: 3px
     &__btn
         margin-top: 4px
-        height: 19px
-        width: 21px
+        height: 25px
+        width: 28px
+        transition: all 0.2s linear
+        &:hover
+            opacity: 0.7
     &__linea
         height: 2px
-        width: 23px
+        width: 30px
         background: $blanco
     &__ul
         display: none
@@ -61,7 +68,7 @@
 .banner
     text-align: center
     margin: 0 auto
-    margin-bottom: 3em
+    margin-bottom: 1em
     &__title
         color: $blanco
         line-height: 1
@@ -90,3 +97,34 @@
         transition: all 0.3s linear
         &:hover
             color: $blanco
+
+
+@include desde (tablet)
+    .menu
+        &__fix
+            top: 45px
+        &__logo
+            margin-left: 70px
+        &__icon
+            width: 40px
+        &__abrir
+            margin-right: 80px
+        &__btn
+            height: 25px
+            width: 29px
+        &__linea
+            height: 2px
+            width: 41px
+    .banner
+        &__title
+            font-size: 55px
+        &__subtitle
+            font-size: 28px
+            max-width: 545px
+        &__abajo
+            font-size: 35px
+
+@include desde (web)
+    .menu
+        &__fix
+            display: none
