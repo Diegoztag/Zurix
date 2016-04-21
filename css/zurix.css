@@ -4061,6 +4061,7 @@ class="no-padding" el hijo le da padding cero solo a este.
   padding: 3px 6px;
   margin-right: 25px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .menu__btn {
   margin-top: 4px;
@@ -4106,7 +4107,7 @@ class="no-padding" el hijo le da padding cero solo a este.
   margin-bottom: 1em;
 }
 .banner__title {
-  color: #FDFDFD;
+  color: #E1D4E6;
   line-height: 1;
   font-size: 37px;
   margin: 0;
@@ -4138,6 +4139,24 @@ class="no-padding" el hijo le da padding cero solo a este.
   color: #FDFDFD;
 }
 
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .menu__fix {
+    top: 20px;
+  }
+
+  .banner {
+    margin-top: 2em;
+  }
+  .banner__title {
+    font-size: 33px;
+  }
+  .banner__subtitle {
+    font-size: 20px;
+  }
+  .banner__abajo {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu__fix {
     top: 45px;
@@ -4175,19 +4194,43 @@ class="no-padding" el hijo le da padding cero solo a este.
   .menu__fix {
     display: none;
   }
+
+  .banner {
+    margin-bottom: 4.5em;
+  }
+  .banner__title {
+    font-size: 50px;
+  }
+  .banner__subtitle {
+    font-size: 28px;
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .banner {
+    margin-bottom: 4.5em;
+  }
+  .banner__title {
+    font-size: 60px;
+  }
+  .banner__subtitle {
+    font-size: 30px;
+    min-width: 550px;
+    max-width: 650px;
+  }
 }
 h3 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 h5 {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 a {
@@ -4215,14 +4258,15 @@ img {
 }
 
 .nav {
-  width: 220px;
+  width: 210px;
   position: fixed;
   background: #FDFDFD;
   z-index: 30;
   top: 0;
   bottom: 0;
-  left: -220px;
+  left: -250px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: left 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .nav__logo {
   transition: all 0.2s linear;
@@ -4232,6 +4276,24 @@ img {
 }
 .nav__ul {
   padding: 0;
+  margin-bottom: 2em;
+}
+.nav__ul li:hover > ul {
+  max-height: 250px;
+  transition: max-height 0.5s ease-in;
+}
+.nav__ul li:focus > ul {
+  max-height: 250px;
+  transition: max-height 0.5s ease-in;
+}
+.nav__ul2 {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  padding: 0;
+}
+.nav__ul2 a {
+  margin-left: 13px;
 }
 .nav__a {
   font-size: 13px;
@@ -4247,11 +4309,6 @@ img {
 .nav__a:hover {
   background: rgba(45, 45, 45, 0.1);
 }
-.nav__a:active {
-  background: #26a69a;
-  color: white;
-  transition: width 1s, background 1s;
-}
 
 .caract-wrap {
   border-bottom: 1px dashed #cacaca;
@@ -4260,6 +4317,7 @@ img {
 }
 
 .caracteristicas {
+  padding: 0;
   margin: 2em 0;
   text-align: center;
 }
@@ -4268,6 +4326,10 @@ img {
   font-weight: 500;
   margin: 0.5em 0;
   line-height: 2.5;
+}
+.caracteristicas p {
+  max-width: 350px;
+  margin: 0 auto;
 }
 .caracteristicas__icon {
   font-size: 60px;
@@ -4307,6 +4369,10 @@ img {
 
 .titulo {
   color: #ba68c8;
+}
+
+.titulo2 {
+  color: #26a69a;
 }
 
 .ejemplo-grid div {
@@ -4434,14 +4500,197 @@ img {
   height: 300px;
 }
 
+@media screen and (min-width: 480px) {
+  h3 {
+    font-size: 27px;
+  }
+
+  .main p, .main ul {
+    font-size: 16px;
+  }
+
+  .caract-wrap {
+    margin: 5em 0em;
+    margin-bottom: 5em;
+  }
+
+  .caracteristicas {
+    margin: 3em 0;
+  }
+  .caracteristicas h3 {
+    font-size: 23px;
+  }
+  .caracteristicas p {
+    max-width: 450px;
+  }
+  .caracteristicas__icon {
+    font-size: 65px;
+    color: #9c27b0;
+  }
+
+  .ejemplo-grid div {
+    height: 45px;
+  }
+
+  .ejemplo-grid2 div {
+    height: 45px;
+  }
+
+  .ejemplo-grid3 div {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 29px;
+  }
+
+  h4 {
+    font-size: 21px;
+  }
+
+  .main p, .main ul {
+    font-size: 17px;
+  }
+
+  .nav {
+    width: 250px;
+  }
+  .nav__a {
+    font-size: 14px;
+  }
+
+  .caracteristicas {
+    margin: 3em 0;
+  }
+  .caracteristicas h3 {
+    font-size: 25px;
+  }
+  .caracteristicas p {
+    max-width: 500px;
+  }
+}
 @media screen and (min-width: 1024px) {
+  code, pre {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
   .wrap {
-    margin-left: 250px;
-    position: relative;
+    padding-left: 250px;
   }
 
   .nav {
     width: 250px;
     left: 0;
+  }
+
+  .caract-wrap {
+    margin: 7em 0em;
+  }
+
+  .caracteristicas {
+    padding: 0 30px;
+  }
+  .caracteristicas p {
+    max-width: 445px;
+    text-align: justify;
+  }
+
+  .offsets .hijo {
+    padding: 3.5em;
+  }
+}
+.pushy {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */
+}
+
+.pushy.pushy-left {
+  left: 0;
+}
+
+/* Menu Movement */
+.pushy-left {
+  -webkit-transform: translate3d(-210px, 0, 0);
+  -ms-transform: translate3d(-210px, 0, 0);
+  transform: translate3d(-210px, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .pushy-left {
+    -webkit-transform: translate3d(-250px, 0, 0);
+    -ms-transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250px, 0, 0);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pushy-left {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+}
+.pushy-open-left .pushy,
+.pushy-open-right .pushy {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Menu Transitions */
+#container,
+.pushy,
+.push {
+  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+/* Site Overlay */
+.site-overlay {
+  display: none;
+}
+
+.pushy-open-left .site-overlay,
+.pushy-open-right .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-animation: fade 500ms;
+  animation: fade 500ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

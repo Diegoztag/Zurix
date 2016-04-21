@@ -34,6 +34,7 @@
         padding: 3px 6px
         margin-right: 25px
         border-radius: 3px
+        cursor: pointer
     &__btn
         margin-top: 4px
         height: 25px
@@ -70,7 +71,7 @@
     margin: 0 auto
     margin-bottom: 1em
     &__title
-        color: $blanco
+        color: #E1D4E6
         line-height: 1
         font-size: 37px
         margin: 0
@@ -98,6 +99,19 @@
         &:hover
             color: $blanco
 
+@include hasta-pantalla (tablet,ancho)
+    .menu   
+        &__fix
+            top: 20px
+
+    .banner
+        margin-top: 2em
+        &__title
+            font-size: 33px
+        &__subtitle
+            font-size: 20px
+        &__abajo
+            display: none
 
 @include desde (tablet)
     .menu
@@ -128,3 +142,21 @@
     .menu
         &__fix
             display: none
+
+    .banner
+        margin-bottom: 4.5em
+        &__title
+            font-size: 50px
+        &__subtitle
+            font-size: 28px
+            max-width: 550px
+
+@include desde (1250px)
+    .banner
+        margin-bottom: 4.5em
+        &__title
+            font-size: 60px
+        &__subtitle
+            font-size: 30px
+            min-width: 550px
+            max-width: 650px
