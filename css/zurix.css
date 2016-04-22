@@ -4500,9 +4500,25 @@ img {
   height: 300px;
 }
 
+#footer {
+  padding: 2em 0em;
+  background: #ab47bc;
+  color: #E1D4E6;
+}
+#footer .hijo h5 {
+  margin: 1em 0;
+}
+#footer .hijo p {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 480px) {
   h3 {
     font-size: 27px;
+  }
+
+  h5 {
+    color: #E1D4E6;
   }
 
   .main p, .main ul {
@@ -4526,6 +4542,10 @@ img {
   .caracteristicas__icon {
     font-size: 65px;
     color: #9c27b0;
+  }
+
+  .ejemplo-cajas .hijo p {
+    font-size: 14px;
   }
 
   .ejemplo-grid div {

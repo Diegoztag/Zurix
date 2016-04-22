@@ -233,10 +233,21 @@ img
         background: #26a69a
         height: 300px
 
+#footer
+    padding: 2em 0em
+    background: #ab47bc
+    color: #E1D4E6
+    .hijo
+        h5
+            margin: 1em 0
+        p
+            font-size: 14px
+
 @include desde (movil)
     h3
         font-size: 27px
-
+    h5
+        color: #E1D4E6
     .main
         p,ul
             font-size: $text-main-movil
@@ -254,6 +265,11 @@ img
         &__icon
             font-size: 65px
             color: $lila
+
+    .ejemplo-cajas
+        .hijo
+            p
+                font-size: 14px
 
     .ejemplo-grid
         div
