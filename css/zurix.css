@@ -4221,7 +4221,7 @@ class="no-padding" el hijo le da padding cero solo a este.
 }
 h3 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h4 {
@@ -4373,6 +4373,7 @@ img {
 
 .titulo2 {
   color: #26a69a;
+  font-weight: 500;
 }
 
 .ejemplo-grid div {
@@ -4501,24 +4502,51 @@ img {
 }
 
 #footer {
+  background: #BA62C9;
+}
+#footer .footer {
   padding: 2em 0em;
-  background: #ab47bc;
   color: #E1D4E6;
 }
-#footer .hijo h5 {
-  margin: 1em 0;
+#footer .footer .tercio {
+  padding: 20px;
 }
-#footer .hijo p {
+#footer .footer .tercio h5 {
+  margin: 0.7em 0;
+  font-weight: 400;
+  font-size: 21px;
+  color: #E1D4E6;
+}
+#footer .footer .tercio p {
   font-size: 14px;
+}
+#footer .footer .tercio iframe {
+  margin: 3.5px 0;
+}
+#footer .footer .tercio ul {
+  font-size: 13px;
+}
+#footer .footer .tercio .btn-fork {
+  font-size: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+#footer .footer .contribute p {
+  margin-bottom: 0;
+}
+#footer .copy {
+  height: 65px;
+  background: #9c27b0;
+  color: #e1bee7;
+}
+#footer .copy span {
+  font-size: 12px;
+  margin: 5px 0px;
 }
 
 @media screen and (min-width: 480px) {
   h3 {
     font-size: 27px;
-  }
-
-  h5 {
-    color: #E1D4E6;
   }
 
   .main p, .main ul {
@@ -4559,6 +4587,24 @@ img {
   .ejemplo-grid3 div {
     height: 45px;
   }
+
+  .tercio {
+    text-align: center;
+  }
+  .tercio h5 {
+    font-size: 23px;
+  }
+  .tercio p {
+    max-width: 410px;
+    margin: 15px auto;
+  }
+  .tercio ul {
+    font-size: 14px;
+  }
+
+  .copy span {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 768px) {
   h3 {
@@ -4589,6 +4635,20 @@ img {
   .caracteristicas p {
     max-width: 500px;
   }
+
+  .tercio {
+    text-align: center;
+  }
+  .tercio h5 {
+    font-size: 23px;
+  }
+  .tercio p {
+    max-width: 500px;
+  }
+
+  .copy span {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1024px) {
   code, pre {
@@ -4596,8 +4656,7 @@ img {
   }
 
   h3 {
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 35px;
   }
 
   h4 {

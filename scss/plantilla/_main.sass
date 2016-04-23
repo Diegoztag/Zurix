@@ -10,7 +10,7 @@ $title-main-web:    14px
 
 h3
     font-size: 25px
-    font-weight: 500
+    font-weight: 400
 h4
     font-size: 20px
 h5
@@ -131,6 +131,7 @@ img
 
 .titulo2
     color: #26a69a
+    font-weight: 500
 
 .ejemplo-grid
     div
@@ -234,20 +235,43 @@ img
         height: 300px
 
 #footer
-    padding: 2em 0em
-    background: #ab47bc
-    color: #E1D4E6
-    .hijo
-        h5
-            margin: 1em 0
-        p
-            font-size: 14px
+    background: #BA62C9
+    .footer
+        padding: 2em 0em
+        color: #E1D4E6
+        .tercio
+            padding: 20px
+            h5
+                margin: 0.7em 0
+                font-weight: 400
+                font-size: 21px
+                color: #E1D4E6
+            p
+                font-size: 14px
+            iframe
+                margin: 3.5px 0
+            ul
+                font-size: 13px
+            .btn-fork
+                font-size: 20px
+                margin-left: 10px
+                vertical-align: middle
+        .contribute
+            p
+                margin-bottom: 0
+
+    .copy
+        height: 65px
+        background: $lila
+        color: $lila2
+        span
+            font-size: 12px
+            margin: 5px 0px
+
 
 @include desde (movil)
     h3
         font-size: 27px
-    h5
-        color: #E1D4E6
     .main
         p,ul
             font-size: $text-main-movil
@@ -282,6 +306,20 @@ img
     .ejemplo-grid3
         div
             height: 45px
+    
+    .tercio
+        text-align: center
+        h5
+            font-size: 23px
+        p
+            max-width: 410px
+            margin: 15px auto
+        ul
+            font-size: 14px
+    .copy
+        span
+            font-size: 14px
+
   
 @include desde (tablet)
     h3
@@ -304,12 +342,21 @@ img
         p
             max-width: 500px
 
+    .tercio
+        text-align: center
+        h5
+            font-size: 23px
+        p
+            max-width: 500px
+    .copy
+        span
+            font-size: 16px
+
 @include desde (web)
     code, pre
         font-size: 15px
     h3
-        font-size: 32px
-        font-weight: 500
+        font-size: 35px
     h4
         font-size: 22px
     h5

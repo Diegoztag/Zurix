@@ -17,6 +17,7 @@ $(document).ready(function () {
 	});
 });
 
+
 //Script desplazamiento boton abajo-----------------------
 $(document).ready(function () {
 	$('.banner__abajo').on('click',function () {
