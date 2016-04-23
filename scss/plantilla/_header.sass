@@ -66,6 +66,23 @@
             background: $blanco
             color: #2d2d2d
 
+.menu__fix2
+    position: fixed
+    width: 100%
+    background: $lila
+    top: 0px
+    height: 55px
+    z-index: 25
+    right: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    visibility: hidden
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    img
+        margin: 0
+
+
 .banner
     text-align: center
     margin: 0 auto
@@ -150,6 +167,9 @@
         &__subtitle
             font-size: 28px
             max-width: 550px
+
+    .menu__fix2
+        visibility: hidden!important
 
 @include desde (1250px)
     .banner

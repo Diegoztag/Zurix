@@ -268,6 +268,30 @@ img
             font-size: 12px
             margin: 5px 0px
 
+.btn-subir
+    display: none
+    position: fixed
+    top: inherit
+    right: 35px
+    bottom: 35px
+    width: 70px
+    text-align: center
+    overflow: hidden
+    z-index: 20
+    span
+        display: block
+        color: $blanco
+        font-size: 1.2em
+        width: 60px
+        line-height: 56px
+        background: rgba(28,28,28,0.2)
+        border-radius: 100px
+        cursor: pointer
+        padding-top: 0.2em
+        transition: all 100ms linear
+        &:hover,:focus
+            background: rgba(#26a69a,0.8)
+
 
 @include desde (movil)
     h3
@@ -306,19 +330,21 @@ img
     .ejemplo-grid3
         div
             height: 45px
-    
-    .tercio
-        text-align: center
-        h5
-            font-size: 23px
-        p
-            max-width: 410px
-            margin: 15px auto
-        ul
-            font-size: 14px
-    .copy
-        span
-            font-size: 14px
+
+    #footer
+        .footer
+            .tercio
+                text-align: center
+                h5
+                    font-size: 23px
+                p
+                    max-width: 410px
+                    margin: 15px auto
+                ul
+                    font-size: 14px
+        .copy
+            span
+                font-size: 14px
 
   
 @include desde (tablet)
@@ -342,15 +368,13 @@ img
         p
             max-width: 500px
 
-    .tercio
-        text-align: center
-        h5
-            font-size: 23px
-        p
-            max-width: 500px
-    .copy
-        span
-            font-size: 16px
+    #footer
+        .footer
+            .tercio
+                p
+                    max-width: 500px
+                ul
+                    font-size: 14px
 
 @include desde (web)
     code, pre
@@ -381,6 +405,21 @@ img
     .offsets
         .hijo
             padding: 3.5em
+
+    #footer
+        .footer
+            .tercio
+                text-align: left
+                ul
+                    font-size: 11.5px
+                    margin: 5px
+            .contribute
+                p
+                    margin-bottom: 0
+        .copy
+            span
+                font-size: 15px
+
         
     
 

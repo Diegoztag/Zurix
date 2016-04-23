@@ -4101,6 +4101,24 @@ class="no-padding" el hijo le da padding cero solo a este.
   color: #2d2d2d;
 }
 
+.menu__fix2 {
+  position: fixed;
+  width: 100%;
+  background: #9c27b0;
+  top: 0px;
+  height: 55px;
+  z-index: 25;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.menu__fix2 img {
+  margin: 0;
+}
+
 .banner {
   text-align: center;
   margin: 0 auto;
@@ -4204,6 +4222,10 @@ class="no-padding" el hijo le da padding cero solo a este.
   .banner__subtitle {
     font-size: 28px;
     max-width: 550px;
+  }
+
+  .menu__fix2 {
+    visibility: hidden !important;
   }
 }
 @media screen and (min-width: 1250px) {
@@ -4544,6 +4566,33 @@ img {
   margin: 5px 0px;
 }
 
+.btn-subir {
+  display: none;
+  position: fixed;
+  top: inherit;
+  right: 35px;
+  bottom: 35px;
+  width: 70px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 20;
+}
+.btn-subir span {
+  display: block;
+  color: #FDFDFD;
+  font-size: 1.2em;
+  width: 60px;
+  line-height: 56px;
+  background: rgba(28, 28, 28, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+  padding-top: 0.2em;
+  transition: all 100ms linear;
+}
+.btn-subir span:hover, .btn-subir span :focus {
+  background: rgba(38, 166, 154, 0.8);
+}
+
 @media screen and (min-width: 480px) {
   h3 {
     font-size: 27px;
@@ -4588,21 +4637,20 @@ img {
     height: 45px;
   }
 
-  .tercio {
+  #footer .footer .tercio {
     text-align: center;
   }
-  .tercio h5 {
+  #footer .footer .tercio h5 {
     font-size: 23px;
   }
-  .tercio p {
+  #footer .footer .tercio p {
     max-width: 410px;
     margin: 15px auto;
   }
-  .tercio ul {
+  #footer .footer .tercio ul {
     font-size: 14px;
   }
-
-  .copy span {
+  #footer .copy span {
     font-size: 14px;
   }
 }
@@ -4636,18 +4684,11 @@ img {
     max-width: 500px;
   }
 
-  .tercio {
-    text-align: center;
-  }
-  .tercio h5 {
-    font-size: 23px;
-  }
-  .tercio p {
+  #footer .footer .tercio p {
     max-width: 500px;
   }
-
-  .copy span {
-    font-size: 16px;
+  #footer .footer .tercio ul {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -4691,6 +4732,20 @@ img {
 
   .offsets .hijo {
     padding: 3.5em;
+  }
+
+  #footer .footer .tercio {
+    text-align: left;
+  }
+  #footer .footer .tercio ul {
+    font-size: 11.5px;
+    margin: 5px;
+  }
+  #footer .footer .contribute p {
+    margin-bottom: 0;
+  }
+  #footer .copy span {
+    font-size: 15px;
   }
 }
 .pushy {
