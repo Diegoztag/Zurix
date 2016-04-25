@@ -1,20 +1,26 @@
 // Script desplazamiento del nav principal-----------------
 $(document).ready(function () {
+
+	$('.inicio').on('click',function () {
+		$('html,body').animate({scrollTop: $(".inic").offset().top}, 1000);
+	});
+
 	$('.caract').on('click',function () {
-		$('html,body').animate({scrollTop: $(".caracter").offset().top}, 1000);
+		$('html,body').animate({scrollTop: $(".caracter").offset().top-50}, 1000);
 	});
 
 	$('.acerca').on('click',function () {
-		$('html,body').animate({scrollTop: $(".about").offset().top}, 1000);
+		$('html,body').animate({scrollTop: $(".about").offset().top-80}, 1000);
 	});
 
 	$('.init').on('click',function () {
-		$('html,body').animate({scrollTop: $(".iniciando").offset().top}, 1000);
+		$('html,body').animate({scrollTop: $(".iniciando").offset().top-80}, 1000);
 	});
 
 	$('.grid').on('click',function () {
-		$('html,body').animate({scrollTop: $(".rejilla").offset().top}, 1000);
+		$('html,body').animate({scrollTop: $(".rejilla").offset().top-80}, 1000);
 	});
+
 });
 
 

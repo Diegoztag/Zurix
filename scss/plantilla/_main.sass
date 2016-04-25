@@ -79,7 +79,7 @@ img
 
 .caract-wrap
     border-bottom: 1px dashed #cacaca
-    margin: 2em 0em
+    margin: 4em 0em
     margin-bottom: 3em
 
 .caracteristicas
@@ -235,7 +235,7 @@ img
         height: 300px
 
 #footer
-    background: #BA62C9
+    background: $lila3
     .footer
         padding: 2em 0em
         color: #E1D4E6
@@ -272,7 +272,7 @@ img
     display: none
     position: fixed
     top: inherit
-    right: 35px
+    right: 5px
     bottom: 35px
     width: 70px
     text-align: center
@@ -291,6 +291,11 @@ img
         transition: all 100ms linear
         &:hover,:focus
             background: rgba(#26a69a,0.8)
+
+.active
+    background: $lila3
+    color: $blanco
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 11px 0 rgba(0, 0, 0, 0.12)
 
 
 @include desde (movil)
@@ -376,6 +381,9 @@ img
                 ul
                     font-size: 14px
 
+    .btn-subir
+        right: 35px
+
 @include desde (web)
     code, pre
         font-size: 15px
@@ -394,7 +402,7 @@ img
         left: 0
 
     .caract-wrap
-        margin: 7em 0em
+        margin: 4em 0em
 
     .caracteristicas
         padding: 0 30px
