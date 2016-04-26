@@ -12,12 +12,14 @@ $padding: 15px;
 // Tamaños, puede modificar,borrar o añadir los nombres y valores por default para 
 // ajustarse a sus puntos de quiebre o medias querys personalizados.
 $breakpoints: (
+  mini   : 270px,
   movil  : 480px,
   tablet : 768px,
   web    : 1024px,
   hd     : 1400px
 );
 
+$mini   : 270px;
 $movil  : 480px;
 $tablet : 768px;
 $web    : 1024px;
@@ -44,7 +46,7 @@ $fracciones: (
   $header-font           : 'Open Sans', sans-serif;  // Tipografía para los títulos (h1,h2,h3...)
   $header-font-weight    : normal;                  // Espesura de la letra de los títulos.
   $header-text-transform : normal;                   // normal, uppercase, lowercase, capitalize
-  $header-color          : #2d2d2d;                  // Color designado para los títulos.
+  $header-color          : $negro;                  // Color designado para los títulos.
 
 // Tamaño de títulos
   $h1-font-size : 2em;
