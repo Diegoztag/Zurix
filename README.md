@@ -1,6 +1,6 @@
 
 
-# Zurix 1.0.3
+# Zurix 1.0.4
 
 ### ❤ Sass • CSS ❤ 
 

@@ -1,6 +1,6 @@
 {
   "name": "zurix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Framework CSS flexbox destinado a crear diseños web responsive (RWD) y mobile first.",
   "main": "zurix.scss",
   "repository": {

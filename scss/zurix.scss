@@ -64,18 +64,25 @@ $fracciones: (
   $p-line-height : 1.5;        // Altura de línea.
   $p-margin      : 1.5em;      // Margen o separación.
 
+//Estilos para personalizar los menus
+  $background-content       : #FDFDFD;              // Color del contenedor del menú.
+  $background-menu          : #FDFDFD;              // Color del menú principal.
+  $color-links              : #444;                 // Color de los links <a>.
+  $background-link-hover    : rgba(#2d2d2d,0.1);    // Color del hover de los links.
+  $background-menu-anidado  : rgba(#2d2d2d,0.1);    // Color de los sub-menus.
+
 // Módulos de Zurix
 //NOTA: para mejorar el rendimiento del framework desactive los módulos que no se usaran
 //aplicando doble slash "//" antes de @import.
-@import "componentes/core";        // Núcleo base de Zurix.
-@import "componentes/base";        // Estilos base a elementos html sin clases o id
-@import "componentes/mixins";      // Mixins
-@import "componentes/flexbox";     // Flexbox
-@import "componentes/desarrollo";  // Modo desarrollo
-@import "componentes/visibilidad"; // Controlar la visibilidad de elementos
-@import "componentes/utilidades";  // Utilidades adicionales
-@import "componentes/video";       // Videos responsive
-@import "componentes/menu";        // Zurix menu
-@import "componentes/icon-fonts";  // Icon fonts
-@import "componentes/offset";      // Offset
-@import "componentes/tablas";      // Tablas 
+@import "modulos/core";        // Núcleo base de Zurix.
+@import "modulos/base";        // Estilos base a elementos html sin clases o id
+@import "modulos/mixins";      // Mixins
+@import "modulos/flexbox";     // Flexbox
+@import "modulos/desarrollo";  // Modo desarrollo
+@import "modulos/visibilidad"; // Controlar la visibilidad de elementos
+@import "modulos/utilidades";  // Utilidades adicionales
+@import "modulos/video";       // Videos responsive
+@import "modulos/menu";        // Zurix menu
+@import "modulos/icon-fonts";  // Icon fonts
+@import "modulos/offset";      // Offset
+@import "modulos/tablas";      // Tablas 

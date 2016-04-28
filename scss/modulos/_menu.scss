@@ -1,0 +1,126 @@
+
+// Se debe añadir la clase .zurix-menu para generar un menu con previa escructura, el menu es por defecto horizontal.
+
+.zurix-menu {
+  background: $background-content;
+  // box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: left .6s cubic-bezier(.19,1,.22,1);
+
+  .nav{
+    background: $background-menu;
+  }
+
+  ul,ol{
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li a{
+    font-size: 13px;
+    height: 44px;
+    line-height: 44px;
+    display: block;
+    padding: 0 30px;
+    color: $color-links;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    &:hover{
+      background: $background-link-hover;
+    }
+  }
+
+  .nav > li{
+    float: left;
+  }
+
+  .nav li ul{
+    max-height: 0;
+    transition: max-height 0.70s ease-out;
+    overflow: hidden;
+    padding: 0;
+    background: $background-menu-anidado;
+    position: absolute;
+  }
+
+  .nav li:hover > ul{
+    overflow: visible;
+    max-height: 500px;
+    transition: max-height 0.70s ease-in;
+  }
+
+  .nav li ul li{
+    position: relative;
+  }
+
+  .nav li ul li ul{
+    left: 100%;
+    top: 0px;
+    max-height: 0;
+
+    transition: max-height 0.70s ease-out;
+    position: absolute;
+  }
+}
+
+.zurix-menu-v {
+  background: $background-content;
+  // box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: left .6s cubic-bezier(.19,1,.22,1);
+  
+  .nav{
+    background: $background-menu;
+  }
+
+  ul,ol{
+    padding: 0;
+    margin: 0;
+    a{
+      font-size: 13px;
+      height: 44px;
+      line-height: 44px;
+      display: block;
+      padding: 0 30px;
+      color: $color-links;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.1s linear;
+      &:hover{
+        background: $background-link-hover;
+      }
+    }
+    li{
+      position: relative;
+      display: block;
+      &:hover > ul{
+        max-height: 500px;
+        transition: max-height 0.70s ease-in;
+      }
+    }
+      &:focus > ul{
+        max-height: 500px;
+        transition: max-height 0.70s ease-in; 
+      }
+    ul{
+      max-height: 0;
+      transition: max-height 0.70s ease-out;
+      overflow: hidden;
+      padding: 0;
+      background: $background-menu-anidado;
+    }
+  } 
+}
+
+// Mixin que genera el menu vertical dependiendo de breakpoints tablet o web
+@mixin menuh($size) {
+  @include from($size){
+  }
+}
+
+.tablet-horizontal {
+  @include menuh(tablet)
+}
+
+.web-horizontal {
+  @include menuh(web)
+}
