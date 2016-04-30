@@ -1,10 +1,6 @@
 // Script desplazamiento del nav principal-----------------
 $(document).ready(function () {
 
-	$('.inicio').on('click',function () {
-		$('html,body').animate({scrollTop: $(".inic").offset().top}, 1000);
-	});
-
 	$('.caract').on('click',function () {
 		$('html,body').animate({scrollTop: $(".caracter").offset().top-50}, 1000);
 	});
@@ -19,6 +15,10 @@ $(document).ready(function () {
 
 	$('.grid').on('click',function () {
 		$('html,body').animate({scrollTop: $(".rejilla").offset().top-80}, 1000);
+	});
+
+	$('.utili').on('click',function () {
+		$('html,body').animate({scrollTop: $(".utilidades").offset().top-80}, 1000);
 	});
 
 });

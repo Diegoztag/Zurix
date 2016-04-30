@@ -25,7 +25,6 @@
 						</a>
 				</div>
 	      <ul class="nav__ul">
-	        <li><a class="nav__a inicio">Inicio</a></li>
 	        <li><a class="nav__a caract">Características</a></li>
 					<li><a class="nav__a acerca">Acerca de Zurix</a></li>
 					<li><a class="nav__a init">Iniciando</a>
@@ -44,7 +43,7 @@
 							<li class="nav__a"><a href="">Responsive design</a></li>
 						</ul>
 					</li>
-					<li><a class="nav__a">Utilidades</a></li>
+					<li><a class="nav__a utili">Utilidades</a></li>
 	      </ul>
 
 	    </nav>
@@ -93,7 +92,7 @@
 	
 	<div class="site-overlay"></div>
 
-	<header class="head-main inic">
+	<header class="head-main">
 		<div class="papa no-padding">
 			<div class="hijo banner">
 				<h1 class="banner__title">Zurix</h1>
@@ -709,12 +708,137 @@
 	</code>
 </pre>
 
+					<h3 class="titulo utilidades">Utilidades</h3>
+
+					<p>A continuación veremos las herramientas-clases que el framework zurix nos ofrece para ayudar a agilizar nuestra maquetación de nuestro proyecto web.</p>
+
+					<p>Zurix cuenta con clases predeterminadas que pueden usarse como herramientas rápidas para ayudar a la distribución de elementos y dar diseños rápidamente ahorrándote tiempo de desarrollo en css, a continuación veremos las características de una por una con su respectiva demostración.</p>
+
+					<p><b>centro:</b> Centra el contenido.</p>
+
+					<div class="papa utilidad">
+						<div class="hijo">
+							<img src="img/ejemplo.png" class="base-20 centro">
+						</div>
+					</div>
+
+<pre class="language-markup">
+	<code class="language-">
+			<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">img</span> <span class="attr">src=</span><span class="valor">"img/ejemplo.png"</span> <span class="attr">class=</span><span class="valor">"centro"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+					<p><b>izquierda:</b> Flota el contenido hacia la izquierda.</p>
+					<p><b>derecha:</b> Flota el contenido hacia la derecha.</p>
+
+					<div class="papa utilidad">
+						<div class="hijo">
+							<img src="img/ejemplo.png" class="base-20 izquierda">
+							<img src="img/ejemplo.png" class="base-20 derecha">
+						</div>
+					</div>
+
+<pre class="language-markup">
+	<code class="language-">
+			<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">img</span> <span class="attr">src=</span><span class="valor">"img/ejemplo.png"</span> <span class="attr">class=</span><span class="valor">"izquierda"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">img</span> <span class="attr">src=</span><span class="valor">"img/ejemplo.png"</span> <span class="attr">class=</span><span class="valor">"derecha"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+					<p><b>centrar-texto:</b> Coloca el contenido en el centro.</p>
+					<p><b>izquierda-texto:</b> Coloca el contenido hacia la izquierda.</p>
+					<p><b>derecha-texto:</b> Coloca el contenido hacia la derecha.</p>
+
+					<div class="papa utilidad">
+						<div class="hijo">
+							<p class="centrar-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</p>
+							<p class="izquierda-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</p>
+							<p class="derecha-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</p>
+						</div>
+					</div>
+
+<pre class="language-markup">
+	<code class="language-">
+			<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+
+						<span class="comentario"><</span><span class="tag">p</span> <span class="attr">class=</span><span class="valor">"centrar-texto"</span><span class="comentario">> </span><span class="comentario"><span class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</span> <span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span> <span class="attr">class=</span><span class="valor">"izquierda-texto"</span><span class="comentario">> </span><span class="comentario"><span class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</span> <span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span> <span class="attr">class=</span><span class="valor">"derecha-texto"</span><span class="comentario">> </span><span class="comentario"><span class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse?</span> <span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+					<p><b>circulo:</b> Se aplica el estilo circular con border-radius: 50% <i>"siempre y cuando tenga el ancho y el alto de la misma medida."</i></p>
+
+					<div class="papa utilidad">
+						<div class="hijo">
+							<img src="img/ejemplo.png" class="base-20 circulo">
+						</div>
+					</div>
+
+<pre class="language-markup">
+	<code class="language-">
+			<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">img</span> <span class="attr">src=</span><span class="valor">"img/ejemplo.png"</span> <span class="attr">class=</span><span class="valor">"circulo"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+					<p><b>limpiar:</b> Purga el elemento para evitar que lo afecte el float de otros elementos.</p>
+
+					
+					<div class="papa utilidad">
+						<div class="hijo">
+							<img src="img/ejemplo.png" class="base-30 derecha">
+							<p class="base-70 izquierda"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla alias deleniti dolore, aliquid excepturi repellat eaque tempora itaque! Fugiat tempora vitae eius cum enim, ullam ea quibusdam doloremque adipisci provident?</p>
+							<p class="limpiar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolore magni dolores reiciendis voluptatibus ea! Eum aliquam odio, error id dolore hic quidem, velit officia iste harum voluptates fuga blanditiis!</p>
+						</div>
+					</div>
+
+<pre class="language-markup">
+	<code class="language-">
+			<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"papa"</span><span class="comentario">></span>
+				<span class="comentario"><</span><span class="tag">div</span> <span class="attr">class=</span><span class="valor">"hijo"</span><span class="comentario">></span>
+
+						<span class="comentario"><</span><span class="tag">img</span> <span class="attr">src=</span><span class="valor">"img/ejemplo.png"</span> <span class="attr">class=</span><span class="valor">"base-30 derecha"</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span> <span class="attr">class=</span><span class="valor">"base-70 izquierda"</span><span class="comentario">> </span><span class="comentario"><span class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla alias deleniti dolore, aliquid excepturi repellat eaque tempora itaque! Fugiat tempora vitae eius cum enim, ullam ea quibusdam doloremque adipisci provident?</span> <span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span>
+						<span class="comentario"><</span><span class="tag">p</span> <span class="attr">class=</span><span class="valor">"limpiar"</span><span class="comentario">> </span><span class="comentario"><span class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolore magni dolores reiciendis voluptatibus ea! Eum aliquam odio, error id dolore hic quidem, velit officia iste harum voluptates fuga blanditiis!</span> <span class="comentario"><</span><span class="tag">p</span><span class="comentario">></span>
+
+				<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+		<span class="comentario"><</span><span class="tag">/div</span><span class="comentario">></span>
+	</code>
+</pre>
+
+					<p>Como se pudieron ver la clase limpiar lo que hace es que purga al objeto de modo que salga de la influencia de los floats y se situé en una linea limpia en el div y no debajo del párrafo anterior.</p>
+
+					<p>Si no hubiéramos incluido la clase limpiar habría pasado que el parrafo 2 hubiera seguido la estructura de los elementos flotados de la siguiente forma:</p>
+
+					<div class="papa utilidad">
+						<div class="hijo">
+							<img src="img/ejemplo.png" class="base-30 derecha">
+							<p class="base-70 izquierda"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla alias deleniti dolore, aliquid excepturi repellat eaque tempora itaque! Fugiat tempora vitae eius cum enim, ullam ea quibusdam doloremque adipisci provident?</p>
+							<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolore magni dolores reiciendis voluptatibus ea! Eum aliquam odio, error id dolore hic quidem, velit officia iste harum voluptates fuga blanditiis!</p>
+						</div>
+					</div>
 
 				</div>
 			</div>
 		</section>
 
-		<div class="section" id="footer">
+		<footer class="section" id="footer">
 			<div class="papa footer web-90">
 				<div class="hijo tercio base-full web-40">
 					<h5>
@@ -763,7 +887,7 @@
 					<span>MIT License</span>
 				</div>
 			</div>
-		</div>
+		</footer>
 
 		<div class="btn-subir"><span class="icon-arriba"></span></div>
 		
