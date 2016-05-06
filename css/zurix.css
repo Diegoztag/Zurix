@@ -1657,16 +1657,16 @@ h6 {
 
 .justify,
 .justificar {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-justify,
   .mini-justificar {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -1674,8 +1674,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-justify,
   .movil-justificar {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -1683,8 +1683,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-justify,
   .tablet-justificar {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -1692,8 +1692,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-justify,
   .web-justificar {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -1701,24 +1701,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-justify,
   .hd-justificar {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 
 .distribute,
 .distribuir {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-distribute,
   .mini-distribuir {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -1726,8 +1726,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-distribute,
   .movil-distribuir {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -1735,8 +1735,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-distribute,
   .tablet-distribuir {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -1744,8 +1744,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-distribute,
   .web-distribuir {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -1753,24 +1753,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-distribute,
   .hd-distribuir {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
 
 .start,
 .inicio {
-  justify-content: flex-start;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-start,
   .mini-inicio {
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -1778,8 +1778,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-start,
   .movil-inicio {
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -1787,8 +1787,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-start,
   .tablet-inicio {
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -1796,8 +1796,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-start,
   .web-inicio {
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -1805,24 +1805,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-start,
   .hd-inicio {
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
 
 .main-center,
 .centrar {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-main-center,
   .mini-centrar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -1830,8 +1830,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-main-center,
   .movil-centrar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -1839,8 +1839,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-main-center,
   .tablet-centrar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -1848,8 +1848,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-main-center,
   .web-centrar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -1857,24 +1857,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-main-center,
   .hd-centrar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
 
 .end,
 .final {
-  justify-content: flex-end;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-end,
   .mini-final {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
@@ -1882,8 +1882,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-end,
   .movil-final {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
@@ -1891,8 +1891,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-end,
   .tablet-final {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
@@ -1900,8 +1900,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-end,
   .web-final {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
@@ -1909,26 +1909,26 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-end,
   .hd-final {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
 
 .top,
 .arriba {
+  display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  display: flex;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-top,
   .mini-arriba {
+    display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1936,9 +1936,9 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-top,
   .movil-arriba {
+    display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1946,9 +1946,9 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-top,
   .tablet-arriba {
+    display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1956,9 +1956,9 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-top,
   .web-arriba {
+    display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1966,27 +1966,27 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-top,
   .hd-arriba {
+    display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .middle,
 .medio {
+  display: flex;
   align-items: center;
   align-content: center;
-  display: flex;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-middle,
   .mini-medio {
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1994,9 +1994,9 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-middle,
   .movil-medio {
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2004,9 +2004,9 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-middle,
   .tablet-medio {
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2014,9 +2014,9 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-middle,
   .web-medio {
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2024,27 +2024,27 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-middle,
   .hd-medio {
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .bottom,
 .abajo {
+  display: flex;
   align-items: flex-end;
   align-content: flex-end;
-  display: flex;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-bottom,
   .mini-abajo {
+    display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2052,9 +2052,9 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-bottom,
   .movil-abajo {
+    display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2062,9 +2062,9 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-bottom,
   .tablet-abajo {
+    display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2072,9 +2072,9 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-bottom,
   .web-abajo {
+    display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -2082,25 +2082,25 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-bottom,
   .hd-abajo {
+    display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .row-reverse,
 .fila-inversa {
-  flex-direction: row-reverse;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-row-reverse,
   .mini-fila-inversa {
-    flex-direction: row-reverse;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2108,8 +2108,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-row-reverse,
   .movil-fila-inversa {
-    flex-direction: row-reverse;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2117,8 +2117,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-row-reverse,
   .tablet-fila-inversa {
-    flex-direction: row-reverse;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2126,8 +2126,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-row-reverse,
   .web-fila-inversa {
-    flex-direction: row-reverse;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2135,22 +2135,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-row-reverse,
   .hd-fila-inversa {
-    flex-direction: row-reverse;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
 
 .col-reverse,
 .col-inversa {
+  display: flex;
   flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-col-reverse,
   .mini-col-inversa {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2158,8 +2160,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-col-reverse,
   .movil-col-inversa {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2167,8 +2169,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-col-reverse,
   .tablet-col-inversa {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2176,8 +2178,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-col-reverse,
   .web-col-inversa {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
@@ -2185,24 +2187,24 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-col-reverse,
   .hd-col-inversa {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
 
 .row,
 .fila {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-row,
   .mini-fila {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -2210,8 +2212,8 @@ h6 {
 @media all and (min-width: 480px) {
   .movil-row,
   .movil-fila {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -2219,8 +2221,8 @@ h6 {
 @media all and (min-width: 768px) {
   .tablet-row,
   .tablet-fila {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -2228,8 +2230,8 @@ h6 {
 @media all and (min-width: 1024px) {
   .web-row,
   .web-fila {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -2237,54 +2239,54 @@ h6 {
 @media all and (min-width: 1400px) {
   .hd-row,
   .hd-fila {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
 .col {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 @media all and (min-width: 270px) {
   .mini-col {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
 @media all and (min-width: 480px) {
   .movil-col {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
 @media all and (min-width: 768px) {
   .tablet-col {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
 @media all and (min-width: 1024px) {
   .web-col {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
 @media all and (min-width: 1400px) {
   .hd-col {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
@@ -2600,10 +2602,8 @@ body.desarrollo:before, body.design:before {
 
 .centro,
 .center {
-  display: block;
   clear: both;
-  margin-right: auto !important;
-  margin-left: auto !important;
+  margin: 0 auto;
 }
 
 .left,

@@ -1,6 +1,5 @@
-
 //Ordenamiento de elementos con Order de flexbox
-@each $size, $screen-size in $breakpoints{
+@each $size, $screen-size in $breakpoints {
   @media screen and (min-width: $screen-size){
     @for $i from 1 through 10 {
       .#{$size}-order-#{$i} {
@@ -13,80 +12,80 @@
 // Controlar el eje main "Main axis"
 .justify,
 .justificar {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-justify,
     .#{$size}-justificar {
-      justify-content: space-between;
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
   }
 }
 .distribute,
 .distribuir {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-distribute,
     .#{$size}-distribuir {
-      justify-content: space-around;
       display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
   }
 }
 .start,
 .inicio {
-  justify-content: flex-start;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-start,
     .#{$size}-inicio {
-      justify-content: flex-start;
       display: flex;
+      justify-content: flex-start;
       flex-wrap: wrap;
     }
   }
 }
 .main-center,
 .centrar {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-main-center,
     .#{$size}-centrar {
-      justify-content: center;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
     }
   }
 }
 .end,
 .final {
-  justify-content: flex-end;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-end,
     .#{$size}-final {
-      justify-content: flex-end;
       display: flex;
+      justify-content: flex-end;
       flex-wrap: wrap;
     }
   }
@@ -95,54 +94,54 @@
 // Controlar el eje cross "Cross axis"
 .top,
 .arriba {
+  display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  display: flex;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-top,
     .#{$size}-arriba {
+      display: flex;
       align-items: flex-start;
       align-content: flex-start;
-      display: flex;
       flex-wrap: wrap;
     }
   }
 }
 .middle,
 .medio {
+  display: flex;
   align-items: center;
   align-content: center;
-  display: flex;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-middle,
     .#{$size}-medio {
+      display: flex;
       align-items: center;
       align-content: center;
-      display: flex;
       flex-wrap: wrap;
     }
   }
 }
 .bottom,
 .abajo {
+  display: flex;
   align-items: flex-end;
   align-content: flex-end;
-  display: flex;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-bottom,
     .#{$size}-abajo {
+      display: flex;
       align-items: flex-end;
       align-content: flex-end;
-      display: flex;
       flex-wrap: wrap;
     }
   }
@@ -151,60 +150,62 @@
 // Dirección del contenedor
 .row-reverse,
 .fila-inversa {
-  flex-direction: row-reverse;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-row-reverse,
     .#{$size}-fila-inversa {
-      flex-direction: row-reverse;
       display: flex;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
     }
   }
 }
 .col-reverse,
 .col-inversa {
+  display: flex;
   flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-col-reverse,
     .#{$size}-col-inversa {
-      flex-direction: column-reverse;
       display: flex;
+      flex-direction: column-reverse;
       flex-wrap: wrap;
     }
   }
 }
 .row,
 .fila {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-row,
     .#{$size}-fila {
-      flex-direction: row;
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
     }
   }
 }
 .col{
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 @each $size, $screen-size in $breakpoints {
   @media all and (min-width: $screen-size){
     .#{$size}-col{
-      flex-direction: column;
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
     }
   }
