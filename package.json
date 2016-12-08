@@ -2,7 +2,7 @@
   "name": "zurix",
   "version": "1.0.5",
   "description": "Framework CSS flexbox destinado a crear diseños web responsive (RWD) y mobile first.",
-  "main": "zurix.scss",
+  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Diegoztag/Zurix.git"
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Diegoztag/Zurix/issues"
   },
-  "homepage": "https://github.com/Diegoztag/Zurix#readme"
+  "homepage": "https://github.com/Diegoztag/Zurix#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
 }

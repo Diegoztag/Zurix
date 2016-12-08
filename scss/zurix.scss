@@ -9,7 +9,7 @@ $max-width: 1200px;
 // Valor de la separación entre hijos o items.
 $padding: 15px;
 
-// Tamaños, puede modificar,borrar o añadir los nombres y valores por default para 
+// Tamaños, puede modificar,borrar o añadir los nombres y valores por default para
 // ajustarse a sus puntos de quiebre o medias querys personalizados.
 $breakpoints: (
   mini   : 270px,
@@ -85,4 +85,4 @@ $fracciones: (
 @import "modulos/menu";        // Zurix menu
 @import "modulos/icon-fonts";  // Icon fonts
 @import "modulos/offset";      // Offset
-@import "modulos/tablas";      // Tablas 
+@import "modulos/tablas";      // Tablas
