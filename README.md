@@ -1,12 +1,12 @@
 
 
+![Banner] (http://imageshack.com/a/img923/6964/pLn82O.jpg)
+
 # Zurix 1.0.5
 
-### ❤ Sass • CSS ❤ 
+## Sass • CSS
 
 Framework exclusivamente CSS para crear diseños web responsive (RWD) y mobile first.
-
-![Banner] (http://imageshack.com/a/img923/6964/pLn82O.jpg)
 
 Creado en SASS, destinado para maquetación pura y en tiempo récord, no añade estilos predeterminados, esto para evitar conflictos con proyectos en desarrollo, dotado con todo el poder de flexbox!
 
@@ -22,7 +22,7 @@ El siguiente repositorio contienen las carpetas:
 3.- scss: contiene __zurix.scss__ el framework zurix en su versión sass, puede copiar esta carpeta en sus proyectos para incluir zurix con sass.
 
 
-__Documentación__
+## Documentación
 
 http://diegoztag.github.io/Zurix/
 

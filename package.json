@@ -3,25 +3,29 @@
   "version": "1.0.5",
   "description": "Framework CSS flexbox destinado a crear diseños web responsive (RWD) y mobile first.",
   "main": "gulpfile.js",
+  "keywords": [
+    "framework",
+    "library",
+    "css",
+    "sass",
+    "grid",
+    "mobile first",
+    "responsive",
+    "flexbox",
+    "open source",
+    "frontend"
+  ],
+  "author": "Diego Zazueta <Diegoztag@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Diegoztag/Zurix.git"
   },
-  "keywords": [
-    "Framework",
-    "CSS",
-    "Sass",
-    "Mobile",
-    "First",
-    "RWD",
-    "Flexbox"
-  ],
-  "author": "Diego Zazueta <Diegoztag@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Diegoztag/Zurix/issues"
   },
   "homepage": "https://github.com/Diegoztag/Zurix#readme",
+  "license": "MIT",
+  "private": "false",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-minify-css": "^1.2.4",
